@@ -1,4 +1,4 @@
-import { useState, useEffect, useMemo } from 'react';
+import { useState, useEffect, useMemo, useRef } from 'react';
 import { useSearchParams, useNavigate } from 'react-router-dom';
 import { useKanji } from '../hooks/useKanji';
 import { useAudio } from '../hooks/useAudio';
@@ -67,7 +67,31 @@ const Study = () => {
     }, [studyList.length]); // Dependencies needed for bounds check in handleNext/Prev if they weren't functional updates, but since they use prev state, only length strictly matters? functional update handles prev. Actually handleNext reference might be stale? No, it's defined inside component. Functional updates inside setIndex are safe. The useEffect needs to be fresh or handleNext needs to be stable. Since handleNext is re-created every render, we can just depend on it, or better yet, put logic inside effect or use useCallback. Simplest is binding effect to [handleNext, handlePrev].
     // Wait, since handleNext/Prev use functional updates, they don't depend on 'index'. They depend on `studyList.length`.
 
+    // Touch State
+    const touchStart = useRef<number | null>(null);
+    const touchEnd = useRef<number | null>(null);
 
+    const onTouchStart = (e: React.TouchEvent) => {
+        touchEnd.current = null;
+        touchStart.current = e.targetTouches[0].clientX;
+    };
+
+    const onTouchMove = (e: React.TouchEvent) => {
+        touchEnd.current = e.targetTouches[0].clientX;
+    };
+
+    const onTouchEnd = () => {
+        if (!touchStart.current || !touchEnd.current) return;
+        const distance = touchStart.current - touchEnd.current;
+        const isLeftSwipe = distance > 50;
+        const isRightSwipe = distance < -50;
+
+        if (isLeftSwipe) {
+            handleNext();
+        } else if (isRightSwipe) {
+            handlePrev();
+        }
+    };
 
     if (loading) return <div style={{ textAlign: 'center', marginTop: '50px' }}>{I18N.loading}</div>;
 
@@ -83,7 +107,12 @@ const Study = () => {
     const currentKanji = studyList[index];
 
     return (
-        <div style={{ width: '100%', maxWidth: '600px', margin: '0 auto', paddingBottom: '100px' }}>
+        <div
+            onTouchStart={onTouchStart}
+            onTouchMove={onTouchMove}
+            onTouchEnd={onTouchEnd}
+            style={{ width: '100%', maxWidth: '600px', margin: '0 auto', paddingBottom: '100px' }}
+        >
             {/* Header */}
             <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '1rem' }}>
                 <button onClick={() => navigate('/')} className="btn-icon" style={{ padding: '0.5rem' }}>
