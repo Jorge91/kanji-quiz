@@ -1,0 +1,715 @@
+[
+    {
+        "id": "n3-1",
+        "kanji": "政",
+        "readings": [
+            "せい",
+            "まつりごと"
+        ],
+        "meanings": [
+            "política",
+            "gobierno"
+        ],
+        "examples": [
+            {
+                "japanese": "政治 (せいじ)",
+                "spanish": "Política"
+            }
+        ]
+    },
+    {
+        "id": "n3-2",
+        "kanji": "議",
+        "readings": [
+            "ぎ"
+        ],
+        "meanings": [
+            "deliberación"
+        ],
+        "examples": [
+            {
+                "japanese": "会議 (かいぎ)",
+                "spanish": "Reunión"
+            }
+        ]
+    },
+    {
+        "id": "n3-3",
+        "kanji": "民",
+        "readings": [
+            "みん",
+            "たみ"
+        ],
+        "meanings": [
+            "gente",
+            "nación"
+        ],
+        "examples": [
+            {
+                "japanese": "国民 (こくみん)",
+                "spanish": "Ciudadano"
+            }
+        ]
+    },
+    {
+        "id": "n3-4",
+        "kanji": "連",
+        "readings": [
+            "れん",
+            "つら"
+        ],
+        "meanings": [
+            "llevarse",
+            "conectar"
+        ],
+        "examples": [
+            {
+                "japanese": "連絡 (れんらく)",
+                "spanish": "Contacto"
+            }
+        ]
+    },
+    {
+        "id": "n3-5",
+        "kanji": "対",
+        "readings": [
+            "たい",
+            "つい"
+        ],
+        "meanings": [
+            "opuesto",
+            "vs"
+        ],
+        "examples": [
+            {
+                "japanese": "反対 (はんたい)",
+                "spanish": "Oposición"
+            }
+        ]
+    },
+    {
+        "id": "n3-6",
+        "kanji": "部",
+        "readings": [
+            "ぶ",
+            "へ"
+        ],
+        "meanings": [
+            "sección",
+            "parte"
+        ],
+        "examples": [
+            {
+                "japanese": "部屋 (へや)",
+                "spanish": "Habitación"
+            }
+        ]
+    },
+    {
+        "id": "n3-7",
+        "kanji": "合",
+        "readings": [
+            "ごう",
+            "あ"
+        ],
+        "meanings": [
+            "ajustar",
+            "unir"
+        ],
+        "examples": [
+            {
+                "japanese": "試合 (しあい)",
+                "spanish": "Partido"
+            }
+        ]
+    },
+    {
+        "id": "n3-8",
+        "kanji": "市",
+        "readings": [
+            "し",
+            "いち"
+        ],
+        "meanings": [
+            "ciudad",
+            "mercado"
+        ],
+        "examples": [
+            {
+                "japanese": "市民 (しみん)",
+                "spanish": "Ciudadano"
+            }
+        ]
+    },
+    {
+        "id": "n3-9",
+        "kanji": "内",
+        "readings": [
+            "ない",
+            "うち"
+        ],
+        "meanings": [
+            "dentro"
+        ],
+        "examples": [
+            {
+                "japanese": "家内 (かない)",
+                "spanish": "Mi esposa"
+            }
+        ]
+    },
+    {
+        "id": "n3-10",
+        "kanji": "相",
+        "readings": [
+            "そう",
+            "あい"
+        ],
+        "meanings": [
+            "aspecto",
+            "mutuo"
+        ],
+        "examples": [
+            {
+                "japanese": "相談 (そうだん)",
+                "spanish": "Consulta"
+            }
+        ]
+    },
+    {
+        "id": "n3-11",
+        "kanji": "定",
+        "readings": [
+            "てい",
+            "さだ"
+        ],
+        "meanings": [
+            "decidir",
+            "fijar"
+        ],
+        "examples": [
+            {
+                "japanese": "予定 (よてい)",
+                "spanish": "Plan"
+            }
+        ]
+    },
+    {
+        "id": "n3-12",
+        "kanji": "回",
+        "readings": [
+            "かい",
+            "まわ"
+        ],
+        "meanings": [
+            "veces",
+            "girar"
+        ],
+        "examples": [
+            {
+                "japanese": "今回 (こんかい)",
+                "spanish": "Esta vez"
+            }
+        ]
+    },
+    {
+        "id": "n3-13",
+        "kanji": "選",
+        "readings": [
+            "せん",
+            "えら"
+        ],
+        "meanings": [
+            "elegir"
+        ],
+        "examples": [
+            {
+                "japanese": "選手 (せんしゅ)",
+                "spanish": "Jugador/Atleta"
+            }
+        ]
+    },
+    {
+        "id": "n3-14",
+        "kanji": "米",
+        "readings": [
+            "べい",
+            "こめ"
+        ],
+        "meanings": [
+            "arroz",
+            "América"
+        ],
+        "examples": [
+            {
+                "japanese": "米国 (べいこく)",
+                "spanish": "EEUU"
+            }
+        ]
+    },
+    {
+        "id": "n3-15",
+        "kanji": "実",
+        "readings": [
+            "じつ",
+            "み"
+        ],
+        "meanings": [
+            "verdad",
+            "fruta"
+        ],
+        "examples": [
+            {
+                "japanese": "事実 (じじつ)",
+                "spanish": "Hecho"
+            }
+        ]
+    },
+    {
+        "id": "n3-16",
+        "kanji": "関",
+        "readings": [
+            "かん",
+            "せき"
+        ],
+        "meanings": [
+            "relación",
+            "barrera"
+        ],
+        "examples": [
+            {
+                "japanese": "関係 (かんけい)",
+                "spanish": "Relación"
+            }
+        ]
+    },
+    {
+        "id": "n3-17",
+        "kanji": "決",
+        "readings": [
+            "けつ",
+            "き"
+        ],
+        "meanings": [
+            "decidir"
+        ],
+        "examples": [
+            {
+                "japanese": "決める (きめる)",
+                "spanish": "Decidir"
+            }
+        ]
+    },
+    {
+        "id": "n3-18",
+        "kanji": "全",
+        "readings": [
+            "ぜん",
+            "まった"
+        ],
+        "meanings": [
+            "todo"
+        ],
+        "examples": [
+            {
+                "japanese": "全部 (ぜんぶ)",
+                "spanish": "Todo"
+            }
+        ]
+    },
+    {
+        "id": "n3-19",
+        "kanji": "表",
+        "readings": [
+            "ひょう",
+            "おもて",
+            "あらわ"
+        ],
+        "meanings": [
+            "superficie",
+            "expresar"
+        ],
+        "examples": [
+            {
+                "japanese": "発表 (はっぴょう)",
+                "spanish": "Anuncio"
+            }
+        ]
+    },
+    {
+        "id": "n3-20",
+        "kanji": "戦",
+        "readings": [
+            "せん",
+            "たたか"
+        ],
+        "meanings": [
+            "guerra",
+            "pelear"
+        ],
+        "examples": [
+            {
+                "japanese": "戦争 (せんそう)",
+                "spanish": "Guerra"
+            }
+        ]
+    },
+    {
+        "id": "n3-21",
+        "kanji": "経",
+        "readings": [
+            "けい",
+            "へ"
+        ],
+        "meanings": [
+            "pasar",
+            "sutra",
+            "gestionar"
+        ],
+        "examples": [
+            {
+                "japanese": "経済 (けいざい)",
+                "spanish": "Economía"
+            }
+        ]
+    },
+    {
+        "id": "n3-22",
+        "kanji": "最",
+        "readings": [
+            "さい",
+            "もっと"
+        ],
+        "meanings": [
+            "el más"
+        ],
+        "examples": [
+            {
+                "japanese": "最近 (さいきん)",
+                "spanish": "Recientemente"
+            }
+        ]
+    },
+    {
+        "id": "n3-23",
+        "kanji": "現",
+        "readings": [
+            "げん",
+            "あらわ"
+        ],
+        "meanings": [
+            "presente",
+            "aparecer"
+        ],
+        "examples": [
+            {
+                "japanese": "現代 (げんだい)",
+                "spanish": "Actualidad"
+            }
+        ]
+    },
+    {
+        "id": "n3-24",
+        "kanji": "調",
+        "readings": [
+            "ちょう",
+            "しら"
+        ],
+        "meanings": [
+            "investigar",
+            "tono"
+        ],
+        "examples": [
+            {
+                "japanese": "調査 (ちょうさ)",
+                "spanish": "Encuesta/Investigación"
+            }
+        ]
+    },
+    {
+        "id": "n3-25",
+        "kanji": "化",
+        "readings": [
+            "か",
+            "ば"
+        ],
+        "meanings": [
+            "cambiar",
+            "transformar"
+        ],
+        "examples": [
+            {
+                "japanese": "文化 (ぶんか)",
+                "spanish": "Cultura"
+            }
+        ]
+    },
+    {
+        "id": "n3-26",
+        "kanji": "当",
+        "readings": [
+            "とう",
+            "あ"
+        ],
+        "meanings": [
+            "acertar",
+            "apropiado"
+        ],
+        "examples": [
+            {
+                "japanese": "本当 (ほんとう)",
+                "spanish": "Verdad"
+            }
+        ]
+    },
+    {
+        "id": "n3-27",
+        "kanji": "約",
+        "readings": [
+            "やく"
+        ],
+        "meanings": [
+            "promesa",
+            "aproximadamente"
+        ],
+        "examples": [
+            {
+                "japanese": "約束 (やくそく)",
+                "spanish": "Promesa"
+            }
+        ]
+    },
+    {
+        "id": "n3-28",
+        "kanji": "首",
+        "readings": [
+            "しゅ",
+            "くび"
+        ],
+        "meanings": [
+            "cuello",
+            "líder"
+        ],
+        "examples": [
+            {
+                "japanese": "首相 (しゅしょう)",
+                "spanish": "Primer Ministro"
+            }
+        ]
+    },
+    {
+        "id": "n3-29",
+        "kanji": "法",
+        "readings": [
+            "ほう"
+        ],
+        "meanings": [
+            "ley",
+            "método"
+        ],
+        "examples": [
+            {
+                "japanese": "法律 (ほうりつ)",
+                "spanish": "Ley"
+            }
+        ]
+    },
+    {
+        "id": "n3-30",
+        "kanji": "性",
+        "readings": [
+            "せい",
+            "しょう"
+        ],
+        "meanings": [
+            "sexo",
+            "género",
+            "naturaleza"
+        ],
+        "examples": [
+            {
+                "japanese": "女性 (じょせい)",
+                "spanish": "Mujer"
+            }
+        ]
+    },
+    {
+        "id": "n3-31",
+        "kanji": "要",
+        "readings": [
+            "よう",
+            "い"
+        ],
+        "meanings": [
+            "necesitar",
+            "principal"
+        ],
+        "examples": [
+            {
+                "japanese": "必要 (ひつよう)",
+                "spanish": "Necesario"
+            }
+        ]
+    },
+    {
+        "id": "n3-32",
+        "kanji": "制",
+        "readings": [
+            "せい"
+        ],
+        "meanings": [
+            "sistema",
+            "control"
+        ],
+        "examples": [
+            {
+                "japanese": "制度 (せいど)",
+                "spanish": "Sistema"
+            }
+        ]
+    },
+    {
+        "id": "n3-33",
+        "kanji": "治",
+        "readings": [
+            "じ",
+            "ち",
+            "なお",
+            "おさ"
+        ],
+        "meanings": [
+            "gobernar",
+            "curar"
+        ],
+        "examples": [
+            {
+                "japanese": "政治 (せいじ)",
+                "spanish": "Política"
+            }
+        ]
+    },
+    {
+        "id": "n3-34",
+        "kanji": "務",
+        "readings": [
+            "む",
+            "つと"
+        ],
+        "meanings": [
+            "tarea",
+            "deber"
+        ],
+        "examples": [
+            {
+                "japanese": "事務所 (じむしょ)",
+                "spanish": "Oficina"
+            }
+        ]
+    },
+    {
+        "id": "n3-35",
+        "kanji": "成",
+        "readings": [
+            "せい",
+            "な"
+        ],
+        "meanings": [
+            "convertirse",
+            "éxito"
+        ],
+        "examples": [
+            {
+                "japanese": "成功 (せいこう)",
+                "spanish": "Éxito"
+            }
+        ]
+    },
+    {
+        "id": "n3-36",
+        "kanji": "期",
+        "readings": [
+            "き"
+        ],
+        "meanings": [
+            "periodo",
+            "tiempo"
+        ],
+        "examples": [
+            {
+                "japanese": "期待 (きたい)",
+                "spanish": "Expectativa"
+            }
+        ]
+    },
+    {
+        "id": "n3-37",
+        "kanji": "取",
+        "readings": [
+            "しゅ",
+            "と"
+        ],
+        "meanings": [
+            "tomar"
+        ],
+        "examples": [
+            {
+                "japanese": "取る (とる)",
+                "spanish": "Tomar"
+            }
+        ]
+    },
+    {
+        "id": "n3-38",
+        "kanji": "都",
+        "readings": [
+            "と",
+            "みやこ"
+        ],
+        "meanings": [
+            "metrópolis",
+            "capital"
+        ],
+        "examples": [
+            {
+                "japanese": "京都 (きょうと)",
+                "spanish": "Kioto"
+            }
+        ]
+    },
+    {
+        "id": "n3-39",
+        "kanji": "和",
+        "readings": [
+            "わ",
+            "やわ"
+        ],
+        "meanings": [
+            "paz",
+            "armonía",
+            "japonés"
+        ],
+        "examples": [
+            {
+                "japanese": "平和 (へいわ)",
+                "spanish": "Paz"
+            }
+        ]
+    },
+    {
+        "id": "n3-40",
+        "kanji": "機",
+        "readings": [
+            "き"
+        ],
+        "meanings": [
+            "máquina",
+            "oportunidad"
+        ],
+        "examples": [
+            {
+                "japanese": "機会 (きかい)",
+                "spanish": "Oportunidad"
+            }
+        ]
+    }
+]

@@ -1,0 +1,2119 @@
+[
+    {
+        "id": "n4-1",
+        "kanji": "会",
+        "readings": [
+            "かい",
+            "あ"
+        ],
+        "meanings": [
+            "reunión",
+            "encontrarse"
+        ],
+        "examples": [
+            {
+                "japanese": "会社 (かいしゃ)",
+                "spanish": "Empresa"
+            },
+            {
+                "japanese": "会議 (かいぎ)",
+                "spanish": "Reunión"
+            }
+        ]
+    },
+    {
+        "id": "n4-2",
+        "kanji": "同",
+        "readings": [
+            "どう",
+            "おな"
+        ],
+        "meanings": [
+            "mismo"
+        ],
+        "examples": [
+            {
+                "japanese": "同じ (おなじ)",
+                "spanish": "Mismo"
+            },
+            {
+                "japanese": "同時 (どうじ)",
+                "spanish": "Simultáneo"
+            }
+        ]
+    },
+    {
+        "id": "n4-3",
+        "kanji": "事",
+        "readings": [
+            "じ",
+            "こと"
+        ],
+        "meanings": [
+            "cosa",
+            "asunto"
+        ],
+        "examples": [
+            {
+                "japanese": "仕事 (しごと)",
+                "spanish": "Trabajo"
+            },
+            {
+                "japanese": "食事 (しょくじ)",
+                "spanish": "Comida"
+            }
+        ]
+    },
+    {
+        "id": "n4-4",
+        "kanji": "自",
+        "readings": [
+            "じ",
+            "みずか"
+        ],
+        "meanings": [
+            "uno mismo"
+        ],
+        "examples": [
+            {
+                "japanese": "自分 (じぶん)",
+                "spanish": "Uno mismo"
+            },
+            {
+                "japanese": "自由 (じゆう)",
+                "spanish": "Libertad"
+            }
+        ]
+    },
+    {
+        "id": "n4-5",
+        "kanji": "社",
+        "readings": [
+            "しゃ",
+            "やしろ"
+        ],
+        "meanings": [
+            "compañía",
+            "santuario"
+        ],
+        "examples": [
+            {
+                "japanese": "社長 (しゃちょう)",
+                "spanish": "Presidente"
+            },
+            {
+                "japanese": "社会 (しゃかい)",
+                "spanish": "Sociedad"
+            }
+        ]
+    },
+    {
+        "id": "n4-6",
+        "kanji": "発",
+        "readings": [
+            "はつ",
+            "ほつ"
+        ],
+        "meanings": [
+            "salida",
+            "emitir"
+        ],
+        "examples": [
+            {
+                "japanese": "発表 (はっぴょう)",
+                "spanish": "Anuncio"
+            },
+            {
+                "japanese": "出発 (しゅっぱつ)",
+                "spanish": "Salida"
+            }
+        ]
+    },
+    {
+        "id": "n4-7",
+        "kanji": "者",
+        "readings": [
+            "しゃ",
+            "もの"
+        ],
+        "meanings": [
+            "persona"
+        ],
+        "examples": [
+            {
+                "japanese": "医者 (いしゃ)",
+                "spanish": "Doctor"
+            },
+            {
+                "japanese": "若者 (わかもの)",
+                "spanish": "Joven"
+            }
+        ]
+    },
+    {
+        "id": "n4-8",
+        "kanji": "地",
+        "readings": [
+            "ち",
+            "じ"
+        ],
+        "meanings": [
+            "tierra"
+        ],
+        "examples": [
+            {
+                "japanese": "地下鉄 (ちかてつ)",
+                "spanish": "Metro"
+            },
+            {
+                "japanese": "地図 (ちず)",
+                "spanish": "Mapa"
+            }
+        ]
+    },
+    {
+        "id": "n4-9",
+        "kanji": "業",
+        "readings": [
+            "ぎょう",
+            "わざ"
+        ],
+        "meanings": [
+            "negocio",
+            "acto"
+        ],
+        "examples": [
+            {
+                "japanese": "授業 (じゅぎょう)",
+                "spanish": "Clase"
+            },
+            {
+                "japanese": "産業 (さんぎょう)",
+                "spanish": "Industria"
+            }
+        ]
+    },
+    {
+        "id": "n4-10",
+        "kanji": "方",
+        "readings": [
+            "ほう",
+            "かた"
+        ],
+        "meanings": [
+            "dirección",
+            "persona",
+            "manera"
+        ],
+        "examples": [
+            {
+                "japanese": "読み方 (よみかた)",
+                "spanish": "Forma de leer"
+            },
+            {
+                "japanese": "夕方 (ゆうがた)",
+                "spanish": "Atardecer"
+            }
+        ]
+    },
+    {
+        "id": "n4-11",
+        "kanji": "新",
+        "readings": [
+            "しん",
+            "あたら"
+        ],
+        "meanings": [
+            "nuevo"
+        ],
+        "examples": [
+            {
+                "japanese": "新聞 (しんぶん)",
+                "spanish": "Periódico"
+            },
+            {
+                "japanese": "新しい (あたらしい)",
+                "spanish": "Nuevo"
+            }
+        ]
+    },
+    {
+        "id": "n4-12",
+        "kanji": "場",
+        "readings": [
+            "じょう",
+            "ば"
+        ],
+        "meanings": [
+            "lugar"
+        ],
+        "examples": [
+            {
+                "japanese": "場所 (ばしょ)",
+                "spanish": "Lugar"
+            },
+            {
+                "japanese": "工場 (こうじょう)",
+                "spanish": "Fábrica"
+            }
+        ]
+    },
+    {
+        "id": "n4-13",
+        "kanji": "員",
+        "readings": [
+            "いん"
+        ],
+        "meanings": [
+            "miembro"
+        ],
+        "examples": [
+            {
+                "japanese": "社員 (しゃいん)",
+                "spanish": "Empleado"
+            },
+            {
+                "japanese": "会員 (かいいん)",
+                "spanish": "Miembro"
+            }
+        ]
+    },
+    {
+        "id": "n4-14",
+        "kanji": "立",
+        "readings": [
+            "りつ",
+            "た"
+        ],
+        "meanings": [
+            "estar de pie"
+        ],
+        "examples": [
+            {
+                "japanese": "国立 (こくりつ)",
+                "spanish": "Nacional"
+            },
+            {
+                "japanese": "立つ (たつ)",
+                "spanish": "Ponerse de pie"
+            }
+        ]
+    },
+    {
+        "id": "n4-15",
+        "kanji": "開",
+        "readings": [
+            "かい",
+            "あ",
+            "ひら"
+        ],
+        "meanings": [
+            "abrir"
+        ],
+        "examples": [
+            {
+                "japanese": "開店 (かいてん)",
+                "spanish": "Apertura de tienda"
+            },
+            {
+                "japanese": "開ける (あける)",
+                "spanish": "Abrir"
+            }
+        ]
+    },
+    {
+        "id": "n4-16",
+        "kanji": "手",
+        "readings": [
+            "しゅ",
+            "て"
+        ],
+        "meanings": [
+            "mano"
+        ],
+        "examples": [
+            {
+                "japanese": "手紙 (てがみ)",
+                "spanish": "Carta"
+            },
+            {
+                "japanese": "歌手 (かしゅ)",
+                "spanish": "Cantante"
+            }
+        ]
+    },
+    {
+        "id": "n4-17",
+        "kanji": "力",
+        "readings": [
+            "りょく",
+            "ちから"
+        ],
+        "meanings": [
+            "fuerza",
+            "poder"
+        ],
+        "examples": [
+            {
+                "japanese": "協力 (きょうりょく)",
+                "spanish": "Cooperación"
+            },
+            {
+                "japanese": "力 (ちから)",
+                "spanish": "Fuerza"
+            }
+        ]
+    },
+    {
+        "id": "n4-18",
+        "kanji": "問",
+        "readings": [
+            "もん",
+            "と"
+        ],
+        "meanings": [
+            "pregunta"
+        ],
+        "examples": [
+            {
+                "japanese": "問題 (もんだい)",
+                "spanish": "Problema"
+            },
+            {
+                "japanese": "質問 (しつもん)",
+                "spanish": "Pregunta"
+            }
+        ]
+    },
+    {
+        "id": "n4-19",
+        "kanji": "代",
+        "readings": [
+            "だい",
+            "か"
+        ],
+        "meanings": [
+            "sustituir",
+            "generación",
+            "costo"
+        ],
+        "examples": [
+            {
+                "japanese": "時代 (じだい)",
+                "spanish": "Era/Época"
+            },
+            {
+                "japanese": "代わり (かわり)",
+                "spanish": "Sustituto"
+            }
+        ]
+    },
+    {
+        "id": "n4-20",
+        "kanji": "明",
+        "readings": [
+            "めい",
+            "あか",
+            "あき"
+        ],
+        "meanings": [
+            "brillante",
+            "claro"
+        ],
+        "examples": [
+            {
+                "japanese": "明日 (あした)",
+                "spanish": "Mañana"
+            },
+            {
+                "japanese": "説明 (せつめい)",
+                "spanish": "Explicación"
+            }
+        ]
+    },
+    {
+        "id": "n4-21",
+        "kanji": "動",
+        "readings": [
+            "どう",
+            "うご"
+        ],
+        "meanings": [
+            "moverse"
+        ],
+        "examples": [
+            {
+                "japanese": "運動 (うんどう)",
+                "spanish": "Ejercicio"
+            },
+            {
+                "japanese": "動物 (どうぶつ)",
+                "spanish": "Animal"
+            }
+        ]
+    },
+    {
+        "id": "n4-22",
+        "kanji": "京",
+        "readings": [
+            "きょう"
+        ],
+        "meanings": [
+            "capital"
+        ],
+        "examples": [
+            {
+                "japanese": "東京 (とうきょう)",
+                "spanish": "Tokio"
+            },
+            {
+                "japanese": "京都 (きょうと)",
+                "spanish": "Kioto"
+            }
+        ]
+    },
+    {
+        "id": "n4-23",
+        "kanji": "目",
+        "readings": [
+            "もく",
+            "め"
+        ],
+        "meanings": [
+            "ojo"
+        ],
+        "examples": [
+            {
+                "japanese": "目的 (もくてき)",
+                "spanish": "Propósito"
+            },
+            {
+                "japanese": "目 (め)",
+                "spanish": "Ojo"
+            }
+        ]
+    },
+    {
+        "id": "n4-24",
+        "kanji": "通",
+        "readings": [
+            "つう",
+            "とお"
+        ],
+        "meanings": [
+            "pasar",
+            "commute"
+        ],
+        "examples": [
+            {
+                "japanese": "交通 (こうつう)",
+                "spanish": "Tráfico"
+            },
+            {
+                "japanese": "通う (かよう)",
+                "spanish": "Asistir/Frecuentar"
+            }
+        ]
+    },
+    {
+        "id": "n4-25",
+        "kanji": "言",
+        "readings": [
+            "げん",
+            "い"
+        ],
+        "meanings": [
+            "decir"
+        ],
+        "examples": [
+            {
+                "japanese": "言葉 (ことば)",
+                "spanish": "Palabra"
+            },
+            {
+                "japanese": "言う (いう)",
+                "spanish": "Decir"
+            }
+        ]
+    },
+    {
+        "id": "n4-26",
+        "kanji": "理",
+        "readings": [
+            "り"
+        ],
+        "meanings": [
+            "lógica"
+        ],
+        "examples": [
+            {
+                "japanese": "理由 (りゆう)",
+                "spanish": "Razón"
+            },
+            {
+                "japanese": "料理 (りょうり)",
+                "spanish": "Cocina"
+            }
+        ]
+    },
+    {
+        "id": "n4-27",
+        "kanji": "体",
+        "readings": [
+            "たい",
+            "からだ"
+        ],
+        "meanings": [
+            "cuerpo"
+        ],
+        "examples": [
+            {
+                "japanese": "体 (からだ)",
+                "spanish": "Cuerpo"
+            },
+            {
+                "japanese": "体重 (たいじゅう)",
+                "spanish": "Peso corporal"
+            }
+        ]
+    },
+    {
+        "id": "n4-28",
+        "kanji": "田",
+        "readings": [
+            "でん",
+            "た"
+        ],
+        "meanings": [
+            "campo de arroz"
+        ],
+        "examples": [
+            {
+                "japanese": "田舎 (いなか)",
+                "spanish": "Campo/Rural"
+            },
+            {
+                "japanese": "田中 (たなか)",
+                "spanish": "Tanaka (apellido)"
+            }
+        ]
+    },
+    {
+        "id": "n4-29",
+        "kanji": "主",
+        "readings": [
+            "しゅ",
+            "おも",
+            "ぬし"
+        ],
+        "meanings": [
+            "maestro",
+            "principal"
+        ],
+        "examples": [
+            {
+                "japanese": "主人 (しゅじん)",
+                "spanish": "Esposo/Dueño"
+            },
+            {
+                "japanese": "主に (おもに)",
+                "spanish": "Principalmente"
+            }
+        ]
+    },
+    {
+        "id": "n4-30",
+        "kanji": "題",
+        "readings": [
+            "だい"
+        ],
+        "meanings": [
+            "tema"
+        ],
+        "examples": [
+            {
+                "japanese": "話題 (わだい)",
+                "spanish": "Tema de conversación"
+            },
+            {
+                "japanese": "宿題 (しゅくだい)",
+                "spanish": "Tarea"
+            }
+        ]
+    },
+    {
+        "id": "n4-31",
+        "kanji": "意",
+        "readings": [
+            "い"
+        ],
+        "meanings": [
+            "mente",
+            "significado"
+        ],
+        "examples": [
+            {
+                "japanese": "意味 (いみ)",
+                "spanish": "Significado"
+            },
+            {
+                "japanese": "意見 (いけん)",
+                "spanish": "Opinión"
+            }
+        ]
+    },
+    {
+        "id": "n4-32",
+        "kanji": "不",
+        "readings": [
+            "ふ"
+        ],
+        "meanings": [
+            "no"
+        ],
+        "examples": [
+            {
+                "japanese": "不便 (ふべん)",
+                "spanish": "Inconveniente"
+            },
+            {
+                "japanese": "不足 (ふそく)",
+                "spanish": "Insuficiencia"
+            }
+        ]
+    },
+    {
+        "id": "n4-33",
+        "kanji": "作",
+        "readings": [
+            "さく",
+            "つく"
+        ],
+        "meanings": [
+            "hacer"
+        ],
+        "examples": [
+            {
+                "japanese": "作文 (さくぶん)",
+                "spanish": "Composición"
+            },
+            {
+                "japanese": "作る (つくる)",
+                "spanish": "Hacer"
+            }
+        ]
+    },
+    {
+        "id": "n4-34",
+        "kanji": "用",
+        "readings": [
+            "よう",
+            "もち"
+        ],
+        "meanings": [
+            "uso"
+        ],
+        "examples": [
+            {
+                "japanese": "用意 (ようい)",
+                "spanish": "Preparación"
+            },
+            {
+                "japanese": "利用 (りよう)",
+                "spanish": "Uso"
+            }
+        ]
+    },
+    {
+        "id": "n4-35",
+        "kanji": "度",
+        "readings": [
+            "ど",
+            "たび"
+        ],
+        "meanings": [
+            "grado",
+            "vez"
+        ],
+        "examples": [
+            {
+                "japanese": "今度 (こんど)",
+                "spanish": "Esta vez/Próxima vez"
+            },
+            {
+                "japanese": "一度 (いちど)",
+                "spanish": "Una vez"
+            }
+        ]
+    },
+    {
+        "id": "n4-36",
+        "kanji": "強",
+        "readings": [
+            "きょう",
+            "つよ"
+        ],
+        "meanings": [
+            "fuerte"
+        ],
+        "examples": [
+            {
+                "japanese": "勉強 (べんきょう)",
+                "spanish": "Estudio"
+            },
+            {
+                "japanese": "強い (つよい)",
+                "spanish": "Fuerte"
+            }
+        ]
+    },
+    {
+        "id": "n4-37",
+        "kanji": "公",
+        "readings": [
+            "こう"
+        ],
+        "meanings": [
+            "público"
+        ],
+        "examples": [
+            {
+                "japanese": "公園 (こうえん)",
+                "spanish": "Parque"
+            },
+            {
+                "japanese": "公務員 (こうむいん)",
+                "spanish": "Funcionario público"
+            }
+        ]
+    },
+    {
+        "id": "n4-38",
+        "kanji": "持",
+        "readings": [
+            "じ",
+            "も"
+        ],
+        "meanings": [
+            "tener",
+            "sostener"
+        ],
+        "examples": [
+            {
+                "japanese": "気持ち (きもち)",
+                "spanish": "Sentimiento"
+            },
+            {
+                "japanese": "持つ (もつ)",
+                "spanish": "Sostener/Tener"
+            }
+        ]
+    },
+    {
+        "id": "n4-39",
+        "kanji": "野",
+        "readings": [
+            "や",
+            "の"
+        ],
+        "meanings": [
+            "campo"
+        ],
+        "examples": [
+            {
+                "japanese": "野菜 (やさい)",
+                "spanish": "Verdura"
+            },
+            {
+                "japanese": "分野 (ぶんや)",
+                "spanish": "Campo/Esfera"
+            }
+        ]
+    },
+    {
+        "id": "n4-40",
+        "kanji": "以",
+        "readings": [
+            "い"
+        ],
+        "meanings": [
+            "por medio de",
+            "comparado con"
+        ],
+        "examples": [
+            {
+                "japanese": "以上 (いじょう)",
+                "spanish": "Más de/Eso es todo"
+            },
+            {
+                "japanese": "以外 (いがい)",
+                "spanish": "A excepción de"
+            }
+        ]
+    },
+    {
+        "id": "n4-41",
+        "kanji": "思",
+        "readings": [
+            "し",
+            "おも"
+        ],
+        "meanings": [
+            "pensar"
+        ],
+        "examples": [
+            {
+                "japanese": "思い出す (おもいだす)",
+                "spanish": "Recordar"
+            },
+            {
+                "japanese": "思う (おもう)",
+                "spanish": "Pensar"
+            }
+        ]
+    },
+    {
+        "id": "n4-42",
+        "kanji": "家",
+        "readings": [
+            "か",
+            "いえ",
+            "や"
+        ],
+        "meanings": [
+            "casa",
+            "familia"
+        ],
+        "examples": [
+            {
+                "japanese": "家族 (かぞく)",
+                "spanish": "Familia"
+            },
+            {
+                "japanese": "家 (いえ)",
+                "spanish": "Casa"
+            }
+        ]
+    },
+    {
+        "id": "n4-43",
+        "kanji": "世",
+        "readings": [
+            "せ",
+            "よ"
+        ],
+        "meanings": [
+            "mundo",
+            "generación"
+        ],
+        "examples": [
+            {
+                "japanese": "世界 (せかい)",
+                "spanish": "Mundo"
+            },
+            {
+                "japanese": "世話 (せわ)",
+                "spanish": "Cuidado/Atención"
+            }
+        ]
+    },
+    {
+        "id": "n4-44",
+        "kanji": "多",
+        "readings": [
+            "た",
+            "おお"
+        ],
+        "meanings": [
+            "muchos"
+        ],
+        "examples": [
+            {
+                "japanese": "多分 (たぶん)",
+                "spanish": "Probablemente"
+            },
+            {
+                "japanese": "多い (おおい)",
+                "spanish": "Muchos"
+            }
+        ]
+    },
+    {
+        "id": "n4-45",
+        "kanji": "正",
+        "readings": [
+            "せい",
+            "しょう",
+            "ただ"
+        ],
+        "meanings": [
+            "correcto"
+        ],
+        "examples": [
+            {
+                "japanese": "正月 (しょうがつ)",
+                "spanish": "Año Nuevo"
+            },
+            {
+                "japanese": "正しい (ただしい)",
+                "spanish": "Correcto"
+            }
+        ]
+    },
+    {
+        "id": "n4-46",
+        "kanji": "安",
+        "readings": [
+            "あん",
+            "やす"
+        ],
+        "meanings": [
+            "seguro",
+            "barato"
+        ],
+        "examples": [
+            {
+                "japanese": "安心 (あんしん)",
+                "spanish": "Alivio"
+            },
+            {
+                "japanese": "安い (やすい)",
+                "spanish": "Barato"
+            }
+        ]
+    },
+    {
+        "id": "n4-47",
+        "kanji": "院",
+        "readings": [
+            "いん"
+        ],
+        "meanings": [
+            "institución"
+        ],
+        "examples": [
+            {
+                "japanese": "病院 (びょういん)",
+                "spanish": "Hospital"
+            },
+            {
+                "japanese": "大学院 (だいがくいん)",
+                "spanish": "Escuela de posgrado"
+            }
+        ]
+    },
+    {
+        "id": "n4-48",
+        "kanji": "心",
+        "readings": [
+            "しん",
+            "こころ"
+        ],
+        "meanings": [
+            "corazón"
+        ],
+        "examples": [
+            {
+                "japanese": "中心 (ちゅうしん)",
+                "spanish": "Centro"
+            },
+            {
+                "japanese": "心 (こころ)",
+                "spanish": "Corazón"
+            }
+        ]
+    },
+    {
+        "id": "n4-49",
+        "kanji": "界",
+        "readings": [
+            "かい"
+        ],
+        "meanings": [
+            "mundo"
+        ],
+        "examples": [
+            {
+                "japanese": "世界 (せかい)",
+                "spanish": "Mundo"
+            },
+            {
+                "japanese": "限界 (げんかい)",
+                "spanish": "Límite"
+            }
+        ]
+    },
+    {
+        "id": "n4-50",
+        "kanji": "教",
+        "readings": [
+            "きょう",
+            "おし"
+        ],
+        "meanings": [
+            "enseñar"
+        ],
+        "examples": [
+            {
+                "japanese": "教室 (きょうしつ)",
+                "spanish": "Aula"
+            },
+            {
+                "japanese": "教える (おしえる)",
+                "spanish": "Enseñar"
+            }
+        ]
+    },
+    {
+        "id": "n4-51",
+        "kanji": "文",
+        "readings": [
+            "ぶん",
+            "もん"
+        ],
+        "meanings": [
+            "frase",
+            "literatura"
+        ],
+        "examples": [
+            {
+                "japanese": "文化 (ぶんか)",
+                "spanish": "Cultura"
+            },
+            {
+                "japanese": "文保 (ぶんぽう)",
+                "spanish": "Gramática"
+            }
+        ]
+    },
+    {
+        "id": "n4-52",
+        "kanji": "手",
+        "readings": [
+            "しゅ",
+            "て"
+        ],
+        "meanings": [
+            "mano"
+        ],
+        "examples": [
+            {
+                "japanese": "手紙 (てがみ)",
+                "spanish": "Carta"
+            },
+            {
+                "japanese": "上手 (じょうず)",
+                "spanish": "Hábil"
+            }
+        ]
+    },
+    {
+        "id": "n4-53",
+        "kanji": "画",
+        "readings": [
+            "が",
+            "かく"
+        ],
+        "meanings": [
+            "pincelada",
+            "imagen"
+        ],
+        "examples": [
+            {
+                "japanese": "計画 (けいかく)",
+                "spanish": "Plan"
+            },
+            {
+                "japanese": "映画 (えいが)",
+                "spanish": "Película"
+            }
+        ]
+    },
+    {
+        "id": "n4-54",
+        "kanji": "店",
+        "readings": [
+            "てん",
+            "みせ"
+        ],
+        "meanings": [
+            "tienda"
+        ],
+        "examples": [
+            {
+                "japanese": "店員 (てんいん)",
+                "spanish": "Empleado de tienda"
+            },
+            {
+                "japanese": "店 (みせ)",
+                "spanish": "Tienda"
+            }
+        ]
+    },
+    {
+        "id": "n4-55",
+        "kanji": "知",
+        "readings": [
+            "ち",
+            "し"
+        ],
+        "meanings": [
+            "saber"
+        ],
+        "examples": [
+            {
+                "japanese": "知人 (ちじん)",
+                "spanish": "Conocido"
+            },
+            {
+                "japanese": "知る (しる)",
+                "spanish": "Saber"
+            }
+        ]
+    },
+    {
+        "id": "n4-56",
+        "kanji": "工",
+        "readings": [
+            "こう",
+            "く"
+        ],
+        "meanings": [
+            "construcción",
+            "ingeniería"
+        ],
+        "examples": [
+            {
+                "japanese": "工場 (こうじょう)",
+                "spanish": "Fábrica"
+            },
+            {
+                "japanese": "工事 (こうじ)",
+                "spanish": "Construcción"
+            }
+        ]
+    },
+    {
+        "id": "n4-57",
+        "kanji": "林",
+        "readings": [
+            "りん",
+            "はやし"
+        ],
+        "meanings": [
+            "arboleda"
+        ],
+        "examples": [
+            {
+                "japanese": "林 (はやし)",
+                "spanish": "Arboleda"
+            },
+            {
+                "japanese": "山林 (さんりん)",
+                "spanish": "Bosque de montaña"
+            }
+        ]
+    },
+    {
+        "id": "n4-58",
+        "kanji": "森",
+        "readings": [
+            "しん",
+            "もり"
+        ],
+        "meanings": [
+            "bosque"
+        ],
+        "examples": [
+            {
+                "japanese": "森林 (しんりん)",
+                "spanish": "Bosques"
+            },
+            {
+                "japanese": "森 (もり)",
+                "spanish": "Bosque"
+            }
+        ]
+    },
+    {
+        "id": "n4-59",
+        "kanji": "空",
+        "readings": [
+            "くう",
+            "そら"
+        ],
+        "meanings": [
+            "cielo",
+            "vacío"
+        ],
+        "examples": [
+            {
+                "japanese": "空港 (くうこう)",
+                "spanish": "Aeropuerto"
+            },
+            {
+                "japanese": "空 (そら)",
+                "spanish": "Cielo"
+            }
+        ]
+    },
+    {
+        "id": "n4-60",
+        "kanji": "海",
+        "readings": [
+            "かい",
+            "うみ"
+        ],
+        "meanings": [
+            "mar"
+        ],
+        "examples": [
+            {
+                "japanese": "海外 (かいがい)",
+                "spanish": "Extranjero"
+            },
+            {
+                "japanese": "海 (うみ)",
+                "spanish": "Mar"
+            }
+        ]
+    },
+    {
+        "id": "n4-61",
+        "kanji": "化",
+        "readings": [
+            "か",
+            "ば"
+        ],
+        "meanings": [
+            "cambiar"
+        ],
+        "examples": [
+            {
+                "japanese": "化学 (かがく)",
+                "spanish": "Química"
+            },
+            {
+                "japanese": "お化け (おばけ)",
+                "spanish": "Fantasma"
+            }
+        ]
+    },
+    {
+        "id": "n4-62",
+        "kanji": "音",
+        "readings": [
+            "おん",
+            "おと"
+        ],
+        "meanings": [
+            "sonido"
+        ],
+        "examples": [
+            {
+                "japanese": "音楽 (おんがく)",
+                "spanish": "Música"
+            },
+            {
+                "japanese": "音 (おと)",
+                "spanish": "Sonido"
+            }
+        ]
+    },
+    {
+        "id": "n4-63",
+        "kanji": "楽",
+        "readings": [
+            "がく",
+            "らく",
+            "たの"
+        ],
+        "meanings": [
+            "música",
+            "diversión"
+        ],
+        "examples": [
+            {
+                "japanese": "音楽 (おんがく)",
+                "spanish": "Música"
+            },
+            {
+                "japanese": "楽しい (たのしい)",
+                "spanish": "Divertido"
+            }
+        ]
+    },
+    {
+        "id": "n4-64",
+        "kanji": "歌",
+        "readings": [
+            "か",
+            "うた"
+        ],
+        "meanings": [
+            "canción"
+        ],
+        "examples": [
+            {
+                "japanese": "歌手 (かしゅ)",
+                "spanish": "Cantante"
+            },
+            {
+                "japanese": "歌 (うた)",
+                "spanish": "Canción"
+            }
+        ]
+    },
+    {
+        "id": "n4-65",
+        "kanji": "写",
+        "readings": [
+            "しゃ",
+            "うつ"
+        ],
+        "meanings": [
+            "copiar",
+            "fotografiar"
+        ],
+        "examples": [
+            {
+                "japanese": "写真 (しゃしん)",
+                "spanish": "Foto"
+            },
+            {
+                "japanese": "写す (うつす)",
+                "spanish": "Copiar/Fotografiar"
+            }
+        ]
+    },
+    {
+        "id": "n4-66",
+        "kanji": "真",
+        "readings": [
+            "しん",
+            "ま"
+        ],
+        "meanings": [
+            "verdad"
+        ],
+        "examples": [
+            {
+                "japanese": "写真 (しゃしん)",
+                "spanish": "Foto"
+            },
+            {
+                "japanese": "真ん中 (まんなか)",
+                "spanish": "Centro exacto"
+            }
+        ]
+    },
+    {
+        "id": "n4-67",
+        "kanji": "旅",
+        "readings": [
+            "りょ",
+            "たび"
+        ],
+        "meanings": [
+            "viaje"
+        ],
+        "examples": [
+            {
+                "japanese": "旅行 (りょこう)",
+                "spanish": "Viaje"
+            },
+            {
+                "japanese": "旅 (たび)",
+                "spanish": "Viaje"
+            }
+        ]
+    },
+    {
+        "id": "n4-68",
+        "kanji": "館",
+        "readings": [
+            "かん"
+        ],
+        "meanings": [
+            "edificio público"
+        ],
+        "examples": [
+            {
+                "japanese": "図書館 (としょかん)",
+                "spanish": "Biblioteca"
+            },
+            {
+                "japanese": "映画館 (えいがかん)",
+                "spanish": "Cine"
+            }
+        ]
+    },
+    {
+        "id": "n4-69",
+        "kanji": "有",
+        "readings": [
+            "ゆう",
+            "あ"
+        ],
+        "meanings": [
+            "tener",
+            "existir"
+        ],
+        "examples": [
+            {
+                "japanese": "有名 (ゆうめい)",
+                "spanish": "Famoso"
+            },
+            {
+                "japanese": "有る (ある)",
+                "spanish": "Haber/Estar"
+            }
+        ]
+    },
+    {
+        "id": "n4-70",
+        "kanji": "洋",
+        "readings": [
+            "よう"
+        ],
+        "meanings": [
+            "occidental",
+            "océano"
+        ],
+        "examples": [
+            {
+                "japanese": "洋服 (ようふく)",
+                "spanish": "Ropa occidental"
+            },
+            {
+                "japanese": "西洋 (せいよう)",
+                "spanish": "Occidente"
+            }
+        ]
+    },
+    {
+        "id": "n4-71",
+        "kanji": "服",
+        "readings": [
+            "ふく"
+        ],
+        "meanings": [
+            "ropa"
+        ],
+        "examples": [
+            {
+                "japanese": "服 (ふく)",
+                "spanish": "Ropa"
+            },
+            {
+                "japanese": "和服 (わふく)",
+                "spanish": "Ropa japonesa"
+            }
+        ]
+    },
+    {
+        "id": "n4-72",
+        "kanji": "黒",
+        "readings": [
+            "こく",
+            "くろ"
+        ],
+        "meanings": [
+            "negro"
+        ],
+        "examples": [
+            {
+                "japanese": "黒板 (こくばん)",
+                "spanish": "Pizarra"
+            },
+            {
+                "japanese": "黒い (くろい)",
+                "spanish": "Negro"
+            }
+        ]
+    },
+    {
+        "id": "n4-73",
+        "kanji": "赤",
+        "readings": [
+            "せき",
+            "あか"
+        ],
+        "meanings": [
+            "rojo"
+        ],
+        "examples": [
+            {
+                "japanese": "赤ちゃん (あかちゃん)",
+                "spanish": "Bebé"
+            },
+            {
+                "japanese": "赤い (あかい)",
+                "spanish": "Rojo"
+            }
+        ]
+    },
+    {
+        "id": "n4-74",
+        "kanji": "青",
+        "readings": [
+            "せい",
+            "あお"
+        ],
+        "meanings": [
+            "azul"
+        ],
+        "examples": [
+            {
+                "japanese": "青年 (せいねん)",
+                "spanish": "Joven"
+            },
+            {
+                "japanese": "青い (あおい)",
+                "spanish": "Azul"
+            }
+        ]
+    },
+    {
+        "id": "n4-75",
+        "kanji": "白",
+        "readings": [
+            "はく",
+            "しろ"
+        ],
+        "meanings": [
+            "blanco"
+        ],
+        "examples": [
+            {
+                "japanese": "白い (しろい)",
+                "spanish": "Blanco"
+            },
+            {
+                "japanese": "面白い (おもしろい)",
+                "spanish": "Interesante"
+            }
+        ]
+    },
+    {
+        "id": "n4-76",
+        "kanji": "早",
+        "readings": [
+            "そう",
+            "はや"
+        ],
+        "meanings": [
+            "temprano",
+            "rápido"
+        ],
+        "examples": [
+            {
+                "japanese": "早朝 (そうちょう)",
+                "spanish": "Temprano en la mañana"
+            },
+            {
+                "japanese": "早い (はやい)",
+                "spanish": "Temprano"
+            }
+        ]
+    },
+    {
+        "id": "n4-77",
+        "kanji": "速",
+        "readings": [
+            "そく",
+            "はや"
+        ],
+        "meanings": [
+            "rápido"
+        ],
+        "examples": [
+            {
+                "japanese": "速度 (そくど)",
+                "spanish": "Velocidad"
+            },
+            {
+                "japanese": "速い (はやい)",
+                "spanish": "Rápido"
+            }
+        ]
+    },
+    {
+        "id": "n4-78",
+        "kanji": "起",
+        "readings": [
+            "き",
+            "お"
+        ],
+        "meanings": [
+            "levantarse"
+        ],
+        "examples": [
+            {
+                "japanese": "起きる (おきる)",
+                "spanish": "Despertarse/Levantarse"
+            },
+            {
+                "japanese": "起こす (おこす)",
+                "spanish": "Despertar a alguien"
+            }
+        ]
+    },
+    {
+        "id": "n4-79",
+        "kanji": "寝",
+        "readings": [
+            "しん",
+            "ね"
+        ],
+        "meanings": [
+            "dormir"
+        ],
+        "examples": [
+            {
+                "japanese": "寝室 (しんしつ)",
+                "spanish": "Dormitorio"
+            },
+            {
+                "japanese": "寝る (ねる)",
+                "spanish": "Dormir"
+            }
+        ]
+    },
+    {
+        "id": "n4-80",
+        "kanji": "遊",
+        "readings": [
+            "ゆう",
+            "あそ"
+        ],
+        "meanings": [
+            "jugar"
+        ],
+        "examples": [
+            {
+                "japanese": "遊園地 (ゆうえんち)",
+                "spanish": "Parque de atracciones"
+            },
+            {
+                "japanese": "遊ぶ (あそぶ)",
+                "spanish": "Jugar"
+            }
+        ]
+    },
+    {
+        "id": "n4-81",
+        "kanji": "泳",
+        "readings": [
+            "えい",
+            "およ"
+        ],
+        "meanings": [
+            "nadar"
+        ],
+        "examples": [
+            {
+                "japanese": "水泳 (すいえい)",
+                "spanish": "Natación"
+            },
+            {
+                "japanese": "泳ぐ (およぐ)",
+                "spanish": "Nadar"
+            }
+        ]
+    },
+    {
+        "id": "n4-82",
+        "kanji": "使",
+        "readings": [
+            "し",
+            "つか"
+        ],
+        "meanings": [
+            "usar"
+        ],
+        "examples": [
+            {
+                "japanese": "使用 (しよう)",
+                "spanish": "Uso"
+            },
+            {
+                "japanese": "使う (つかう)",
+                "spanish": "Usar"
+            }
+        ]
+    },
+    {
+        "id": "n4-83",
+        "kanji": "洗",
+        "readings": [
+            "せん",
+            "あら"
+        ],
+        "meanings": [
+            "lavar"
+        ],
+        "examples": [
+            {
+                "japanese": "洗面所 (せんめんじょ)",
+                "spanish": "Lavabo"
+            },
+            {
+                "japanese": "洗う (あらう)",
+                "spanish": "Lavar"
+            }
+        ]
+    },
+    {
+        "id": "n4-84",
+        "kanji": "急",
+        "readings": [
+            "きゅう",
+            "いそ"
+        ],
+        "meanings": [
+            "apresurarse",
+            "urgente"
+        ],
+        "examples": [
+            {
+                "japanese": "急行 (きゅうこう)",
+                "spanish": "Expreso"
+            },
+            {
+                "japanese": "急ぐ (いそぐ)",
+                "spanish": "Apresurarse"
+            }
+        ]
+    },
+    {
+        "id": "n4-85",
+        "kanji": "研",
+        "readings": [
+            "けん",
+            "と"
+        ],
+        "meanings": [
+            "pulir",
+            "estudiar"
+        ],
+        "examples": [
+            {
+                "japanese": "研究 (けんきゅう)",
+                "spanish": "Investigación"
+            }
+        ]
+    },
+    {
+        "id": "n4-86",
+        "kanji": "究",
+        "readings": [
+            "きゅう",
+            "きわ"
+        ],
+        "meanings": [
+            "investigar"
+        ],
+        "examples": [
+            {
+                "japanese": "研究 (けんきゅう)",
+                "spanish": "Investigación"
+            }
+        ]
+    },
+    {
+        "id": "n4-87",
+        "kanji": "質",
+        "readings": [
+            "しつ"
+        ],
+        "meanings": [
+            "calidad",
+            "materia"
+        ],
+        "examples": [
+            {
+                "japanese": "質問 (しつもん)",
+                "spanish": "Pregunta"
+            },
+            {
+                "japanese": "品質 (ひんしつ)",
+                "spanish": "Calidad"
+            }
+        ]
+    },
+    {
+        "id": "n4-88",
+        "kanji": "問",
+        "readings": [
+            "もん",
+            "と"
+        ],
+        "meanings": [
+            "pregunta"
+        ],
+        "examples": [
+            {
+                "japanese": "問題 (もんだい)",
+                "spanish": "Problema"
+            },
+            {
+                "japanese": "問い合わせ (といあわせ)",
+                "spanish": "Consulta"
+            }
+        ]
+    },
+    {
+        "id": "n4-89",
+        "kanji": "親",
+        "readings": [
+            "しん",
+            "おや"
+        ],
+        "meanings": [
+            "padre",
+            "familiar"
+        ],
+        "examples": [
+            {
+                "japanese": "親切 (しんせつ)",
+                "spanish": "Amable"
+            },
+            {
+                "japanese": "親 (おや)",
+                "spanish": "Padres"
+            }
+        ]
+    },
+    {
+        "id": "n4-90",
+        "kanji": "切",
+        "readings": [
+            "せつ",
+            "き"
+        ],
+        "meanings": [
+            "cortar"
+        ],
+        "examples": [
+            {
+                "japanese": "親切 (しんせつ)",
+                "spanish": "Amable"
+            },
+            {
+                "japanese": "切る (きる)",
+                "spanish": "Cortar"
+            }
+        ]
+    },
+    {
+        "id": "n4-91",
+        "kanji": "牛",
+        "readings": [
+            "ぎゅう",
+            "うし"
+        ],
+        "meanings": [
+            "vaca"
+        ],
+        "examples": [
+            {
+                "japanese": "牛乳 (ぎゅうにゅう)",
+                "spanish": "Leche"
+            },
+            {
+                "japanese": "子牛 (こうし)",
+                "spanish": "Ternero"
+            }
+        ]
+    },
+    {
+        "id": "n4-92",
+        "kanji": "特",
+        "readings": [
+            "とく"
+        ],
+        "meanings": [
+            "especial"
+        ],
+        "examples": [
+            {
+                "japanese": "特別 (とくべつ)",
+                "spanish": "Especial"
+            },
+            {
+                "japanese": "特急 (とっきゅう)",
+                "spanish": "Tren limitado expreso"
+            }
+        ]
+    },
+    {
+        "id": "n4-93",
+        "kanji": "別",
+        "readings": [
+            "べつ",
+            "わか"
+        ],
+        "meanings": [
+            "separar",
+            "diferente"
+        ],
+        "examples": [
+            {
+                "japanese": "特別 (とくべつ)",
+                "spanish": "Especial"
+            },
+            {
+                "japanese": "別れる (わかれる)",
+                "spanish": "Separarse"
+            }
+        ]
+    },
+    {
+        "id": "n4-94",
+        "kanji": "兄",
+        "readings": [
+            "きょう",
+            "あに"
+        ],
+        "meanings": [
+            "hermano mayor"
+        ],
+        "examples": [
+            {
+                "japanese": "兄弟 (きょうだい)",
+                "spanish": "Hermanos"
+            },
+            {
+                "japanese": "お兄さん (おにいさん)",
+                "spanish": "Hermano mayor"
+            }
+        ]
+    },
+    {
+        "id": "n4-95",
+        "kanji": "弟",
+        "readings": [
+            "だい",
+            "おとうと"
+        ],
+        "meanings": [
+            "hermano menor"
+        ],
+        "examples": [
+            {
+                "japanese": "兄弟 (きょうだい)",
+                "spanish": "Hermanos"
+            },
+            {
+                "japanese": "弟 (おとうと)",
+                "spanish": "Hermano menor"
+            }
+        ]
+    },
+    {
+        "id": "n4-96",
+        "kanji": "姉",
+        "readings": [
+            "し",
+            "あね"
+        ],
+        "meanings": [
+            "hermana mayor"
+        ],
+        "examples": [
+            {
+                "japanese": "姉妹 (しまい)",
+                "spanish": "Hermanas"
+            },
+            {
+                "japanese": "お姉さん (おねえさん)",
+                "spanish": "Hermana mayor"
+            }
+        ]
+    },
+    {
+        "id": "n4-97",
+        "kanji": "妹",
+        "readings": [
+            "まい",
+            "いもうと"
+        ],
+        "meanings": [
+            "hermana menor"
+        ],
+        "examples": [
+            {
+                "japanese": "姉妹 (しまい)",
+                "spanish": "Hermanas"
+            },
+            {
+                "japanese": "妹 (いもうと)",
+                "spanish": "Hermana menor"
+            }
+        ]
+    },
+    {
+        "id": "n4-98",
+        "kanji": "犬",
+        "readings": [
+            "けん",
+            "いぬ"
+        ],
+        "meanings": [
+            "perro"
+        ],
+        "examples": [
+            {
+                "japanese": "愛犬 (あいけん)",
+                "spanish": "Perro mascota"
+            },
+            {
+                "japanese": "犬 (いぬ)",
+                "spanish": "Perro"
+            }
+        ]
+    },
+    {
+        "id": "n4-99",
+        "kanji": "注",
+        "readings": [
+            "ちゅう",
+            "そそ"
+        ],
+        "meanings": [
+            "verter",
+            "nota"
+        ],
+        "examples": [
+            {
+                "japanese": "注意 (ちゅうい)",
+                "spanish": "Atención"
+            },
+            {
+                "japanese": "注文 (ちゅうもん)",
+                "spanish": "Pedido"
+            }
+        ]
+    },
+    {
+        "id": "n4-100",
+        "kanji": "医",
+        "readings": [
+            "い"
+        ],
+        "meanings": [
+            "medicina"
+        ],
+        "examples": [
+            {
+                "japanese": "医者 (いしゃ)",
+                "spanish": "Doctor"
+            },
+            {
+                "japanese": "医学 (いがく)",
+                "spanish": "Ciencia médica"
+            }
+        ]
+    }
+]
