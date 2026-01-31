@@ -113,7 +113,7 @@ const Quiz = () => {
             onTouchStart={onTouchStart}
             onTouchMove={onTouchMove}
             onTouchEnd={onTouchEnd}
-            style={{ maxWidth: '600px', margin: '0 auto', paddingBottom: '120px', minHeight: '80vh', display: 'flex', flexDirection: 'column' }}
+            style={{ width: '100%', maxWidth: '600px', margin: '0 auto', paddingBottom: '120px', minHeight: '80vh', display: 'flex', flexDirection: 'column' }}
         >
             {/* Header Loop Progress */}
             <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '1rem', color: 'var(--text-secondary)', fontSize: '0.875rem', fontWeight: 'bold' }}>

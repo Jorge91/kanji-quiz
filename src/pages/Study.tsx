@@ -83,7 +83,7 @@ const Study = () => {
     const currentKanji = studyList[index];
 
     return (
-        <div style={{ maxWidth: '600px', margin: '0 auto', paddingBottom: '100px' }}>
+        <div style={{ width: '100%', maxWidth: '600px', margin: '0 auto', paddingBottom: '100px' }}>
             {/* Header */}
             <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '1rem' }}>
                 <button onClick={() => navigate('/')} className="btn-icon" style={{ padding: '0.5rem' }}>

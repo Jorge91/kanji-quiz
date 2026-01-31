@@ -44,7 +44,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
         </button>
       </header>
 
-      <main style={{ flex: 1, position: 'relative' /* for absolute positioning if needed */ }}>
+      <main style={{ flex: 1, position: 'relative', width: '100%' /* for absolute positioning if needed */ }}>
         {children}
       </main>
 
