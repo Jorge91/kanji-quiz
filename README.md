@@ -11,6 +11,9 @@ KanjiGo is a modern, mobile-first web application designed to help users learn J
   - **Animations**: Fluid slide and pop animations for feedback.
   - **Haptics**: Vibration feedback for correct/incorrect answers (mobile).
   - **Gestures**: Swipe left to advance after answering.
+- **Study Mode**:
+  - Browse Kanji at your own pace.
+  - **Keyboard Shortcuts**: `←` (Previous), `→` / `Enter` (Next).
 - **JLPT Datasets**: Includes N5, N4, and N3 Kanji sets with example sentences.
 - **Custom Sets**: Create your own study sets by selecting specific Kanji.
 - **Stats**: Track your learning streaks, total reviews, and accuracy.
