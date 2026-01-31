@@ -18,10 +18,11 @@ export const useKanji = () => {
         try {
             setLoading(true);
             // Load static data
+            const baseUrl = import.meta.env.BASE_URL;
             const [n5Res, n4Res, n3Res] = await Promise.all([
-                fetch('/kanji/n5.json'),
-                fetch('/kanji/n4.json'),
-                fetch('/kanji/n3.json')
+                fetch(`${baseUrl}kanji/n5.json`),
+                fetch(`${baseUrl}kanji/n4.json`),
+                fetch(`${baseUrl}kanji/n3.json`)
             ]);
 
             if (!n5Res.ok || !n4Res.ok || !n3Res.ok) {
