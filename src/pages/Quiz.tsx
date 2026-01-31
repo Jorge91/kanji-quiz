@@ -113,70 +113,70 @@ const Quiz = () => {
             onTouchStart={onTouchStart}
             onTouchMove={onTouchMove}
             onTouchEnd={onTouchEnd}
-            style={{ width: '100%', maxWidth: '600px', margin: '0 auto', paddingBottom: '120px', minHeight: '80vh', display: 'flex', flexDirection: 'column' }}
+            style={{ width: '100%', maxWidth: '600px', margin: '0 auto', paddingBottom: '20px', minHeight: '100vh', display: 'flex', flexDirection: 'column' }}
         >
             {/* Header Loop Progress */}
-            <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '1rem', color: 'var(--text-secondary)', fontSize: '0.875rem', fontWeight: 'bold' }}>
+            <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '0.5rem', color: 'var(--text-secondary)', fontSize: '0.875rem', fontWeight: 'bold' }}>
                 <span>{I18N.question} {questionIndex + 1} / {total}</span>
                 <span>{I18N.points}: {score}</span>
             </div>
 
             {/* Progress Bar */}
-            <div style={{ height: '12px', background: 'var(--border)', borderRadius: '6px', marginBottom: '2rem', overflow: 'hidden' }}>
+            <div style={{ height: '8px', background: 'var(--border)', borderRadius: '4px', marginBottom: '1rem', overflow: 'hidden' }}>
                 <div style={{
                     width: `${((questionIndex) / total) * 100}%`,
                     height: '100%',
                     background: 'var(--accent)',
-                    borderRadius: '6px',
+                    borderRadius: '4px',
                     transition: 'width 0.5s cubic-bezier(0.4, 0, 0.2, 1)'
                 }} />
             </div>
 
             {/* Main Card */}
             {!isFeedback && (
-                <div className="card animate-slide-in" style={{ textAlign: 'center', minHeight: '240px', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', flex: 1 }}>
+                <div className="card animate-slide-in" style={{ textAlign: 'center', minHeight: '180px', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', flex: 1, marginBottom: '1rem' }}>
                     {currentQuestion.mode === 'KANJI_TO_MEANING' ? (
                         <>
-                            <h1 style={{ fontSize: '6rem', marginBottom: '1rem' }}>{currentQuestion.kanji.kanji}</h1>
-                            <button className="btn-icon" onClick={() => speak(currentQuestion.kanji.readings[0])} style={{ marginBottom: '1rem', transform: 'scale(1.2)' }}>
-                                <Volume2 size={32} />
+                            <h1 style={{ fontSize: '4.5rem', margin: 0, lineHeight: 1.2 }}>{currentQuestion.kanji.kanji}</h1>
+                            <button className="btn-icon" onClick={() => speak(currentQuestion.kanji.readings[0])} style={{ margin: '0.5rem 0 0 0', transform: 'scale(1.1)' }}>
+                                <Volume2 size={28} />
                             </button>
                         </>
                     ) : (
-                        <h2 style={{ fontSize: '2.5rem', marginBottom: '2rem' }}>{currentQuestion.kanji.meanings.join(', ')}</h2>
+                        <h2 style={{ fontSize: '2rem', margin: '1rem 0' }}>{currentQuestion.kanji.meanings.join(', ')}</h2>
                     )}
                 </div>
             )}
 
             {/* Detailed Info Card - Only shown in Feedback */}
             {isFeedback && (
-                <div className={`card ${state.isCorrect ? '' : 'animate-shake'}`} style={{ padding: '2rem', flex: 1 }}>
-                    <div style={{ display: 'flex', alignItems: 'center', gap: '1.5rem', marginBottom: '1.5rem', paddingBottom: '1rem', borderBottom: '1px solid var(--border)' }}>
-                        <div style={{ fontSize: '5rem', fontWeight: 'bold', lineHeight: 1 }}>
+                <div className={`card ${state.isCorrect ? '' : 'animate-shake'}`} style={{ padding: '1.5rem', flex: 1, marginBottom: '1rem' }}>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', marginBottom: '1rem', paddingBottom: '0.75rem', borderBottom: '1px solid var(--border)' }}>
+                        <div style={{ fontSize: '4rem', fontWeight: 'bold', lineHeight: 1 }}>
                             {currentQuestion.kanji.kanji}
                         </div>
-                        <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
-                            <button className="btn-icon" onClick={() => speak(currentQuestion.kanji.readings[0])} style={{ alignSelf: 'flex-start' }}>
-                                <Volume2 size={28} />
+                        <div style={{ display: 'flex', flexDirection: 'column', gap: '0.25rem' }}>
+                            <button className="btn-icon" onClick={() => speak(currentQuestion.kanji.readings[0])} style={{ alignSelf: 'flex-start', padding: '0.25rem' }}>
+                                <Volume2 size={24} />
                             </button>
-                            <div style={{ fontSize: '1.5rem', fontWeight: '600' }}>
+                            <div style={{ fontSize: '1.25rem', fontWeight: '600' }}>
                                 {currentQuestion.kanji.meanings.join(', ')}
                             </div>
                         </div>
                     </div>
 
-                    <div style={{ display: 'grid', gap: '1.5rem' }}>
+                    <div style={{ display: 'grid', gap: '1rem' }}>
                         <div>
-                            <div style={{ color: 'var(--text-secondary)', fontSize: '0.875rem', marginBottom: '0.25rem', fontWeight: 'bold', letterSpacing: '1px' }}>{I18N.readings}</div>
-                            <div style={{ fontSize: '1.25rem' }}>{currentQuestion.kanji.readings.join('、 ')}</div>
+                            <div style={{ color: 'var(--text-secondary)', fontSize: '0.8rem', marginBottom: '0.2rem', fontWeight: 'bold', letterSpacing: '1px' }}>{I18N.readings}</div>
+                            <div style={{ fontSize: '1.1rem' }}>{currentQuestion.kanji.readings.join('、 ')}</div>
                         </div>
                         {currentQuestion.kanji.examples && currentQuestion.kanji.examples.length > 0 && (
                             <div>
-                                <div style={{ color: 'var(--text-secondary)', fontSize: '0.875rem', marginBottom: '0.5rem', fontWeight: 'bold', letterSpacing: '1px' }}>{I18N.examples}</div>
-                                {currentQuestion.kanji.examples.map((ex, i) => (
-                                    <div key={i} style={{ marginBottom: '0.5rem', padding: '0.5rem', background: 'var(--bg-primary)', borderRadius: '8px' }}>
-                                        <div style={{ fontSize: '1.1rem', fontWeight: 'bold' }}>{ex.japanese}</div>
-                                        <div style={{ fontSize: '0.9rem', color: 'var(--text-secondary)' }}>{ex.spanish}</div>
+                                <div style={{ color: 'var(--text-secondary)', fontSize: '0.8rem', marginBottom: '0.4rem', fontWeight: 'bold', letterSpacing: '1px' }}>{I18N.examples}</div>
+                                {currentQuestion.kanji.examples.slice(0, 2).map((ex, i) => ( // Show max 2 examples to save space
+                                    <div key={i} style={{ marginBottom: '0.4rem', padding: '0.4rem', background: 'var(--bg-primary)', borderRadius: '6px' }}>
+                                        <div style={{ fontSize: '1rem', fontWeight: 'bold' }}>{ex.japanese}</div>
+                                        <div style={{ fontSize: '0.8rem', color: 'var(--text-secondary)' }}>{ex.spanish}</div>
                                     </div>
                                 ))}
                             </div>
@@ -187,12 +187,12 @@ const Quiz = () => {
 
             {/* Options */}
             {!isFeedback && (
-                <div style={{ display: 'grid', gridTemplateColumns: '1fr', gap: '0.75rem', marginTop: '1rem' }}>
+                <div style={{ display: 'grid', gridTemplateColumns: '1fr', gap: '0.5rem', marginBottom: '1rem' }}>
                     {currentQuestion.options.map((option, idx) => (
                         <button
                             key={idx}
                             className="btn btn-secondary"
-                            style={{ minHeight: '60px', fontSize: '1.2rem', marginBottom: 0, textAlign: 'left', paddingLeft: '2rem' }}
+                            style={{ minHeight: '48px', fontSize: '1rem', marginBottom: 0, textAlign: 'left', paddingLeft: '1.5rem', paddingRight: '1rem' }}
                             onClick={() => handleAnswer(option)}
                         >
                             {option}
@@ -207,7 +207,7 @@ const Quiz = () => {
                     position: 'fixed', bottom: 0, left: 0, right: 0,
                     background: state.isCorrect ? 'var(--bg-secondary)' : 'var(--bg-secondary)', // Neutral bg, colored border/icon
                     borderTop: `4px solid ${state.isCorrect ? 'var(--success)' : 'var(--danger)'}`,
-                    padding: '1.5rem',
+                    padding: '1rem 1.5rem',
                     zIndex: 200, // Above Nav
                     boxShadow: '0 -4px 12px rgba(0,0,0,0.1)',
                     animation: 'slideInUp 0.3s ease-out'
@@ -215,16 +215,16 @@ const Quiz = () => {
                     <div className="container" style={{ minHeight: 'auto', padding: 0, flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' }}>
                         <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
                             {state.isCorrect ? (
-                                <div className="animate-pop"><CheckCircle color="var(--success)" size={48} /></div>
+                                <div className="animate-pop"><CheckCircle color="var(--success)" size={40} /></div>
                             ) : (
-                                <div className="animate-shake"><XCircle color="var(--danger)" size={48} /></div>
+                                <div className="animate-shake"><XCircle color="var(--danger)" size={40} /></div>
                             )}
                             <div>
-                                <h3 style={{ margin: 0, color: state.isCorrect ? 'var(--success)' : 'var(--danger)', fontSize: '1.5rem', fontWeight: '800' }}>
+                                <h3 style={{ margin: 0, color: state.isCorrect ? 'var(--success)' : 'var(--danger)', fontSize: '1.25rem', fontWeight: '800' }}>
                                     {state.isCorrect ? I18N.correct : I18N.incorrect}
                                 </h3>
                                 {!state.isCorrect && (
-                                    <p style={{ color: 'var(--text-secondary)', margin: 0, fontSize: '0.9rem' }}>
+                                    <p style={{ color: 'var(--text-secondary)', margin: 0, fontSize: '0.8rem' }}>
                                         Solución: <span style={{ fontWeight: 'bold', color: 'var(--text-primary)' }}>{currentQuestion.correctAnswer}</span>
                                     </p>
                                 )}
@@ -235,16 +235,17 @@ const Quiz = () => {
                             style={{
                                 width: 'auto',
                                 marginBottom: 0,
-                                paddingLeft: '2rem',
-                                paddingRight: '2rem',
+                                paddingLeft: '1.5rem',
+                                paddingRight: '1.5rem',
                                 background: state.isCorrect ? 'var(--success)' : 'var(--danger)',
                                 boxShadow: state.isCorrect ? '0 4px 0 #46a302' : '0 4px 0 #d32f2f',
                                 border: 'none',
-                                color: 'white'
+                                color: 'white',
+                                fontSize: '0.9rem'
                             }}
                             onClick={() => { triggerSelection(); nextQuestion(); }}
                         >
-                            {I18N.continue} <ArrowRight size={20} style={{ marginLeft: '0.5rem', display: 'inline' }} />
+                            {I18N.continue} <ArrowRight size={18} style={{ marginLeft: '0.5rem', display: 'inline' }} />
                         </button>
                     </div>
                 </div>
