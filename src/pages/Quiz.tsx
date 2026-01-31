@@ -113,7 +113,7 @@ const Quiz = () => {
             onTouchStart={onTouchStart}
             onTouchMove={onTouchMove}
             onTouchEnd={onTouchEnd}
-            style={{ width: '100%', maxWidth: '600px', margin: '0 auto', paddingBottom: '20px', minHeight: '100vh', display: 'flex', flexDirection: 'column' }}
+            style={{ width: '100%', maxWidth: '600px', margin: '0 auto', paddingBottom: '20px', minHeight: 'auto', display: 'flex', flexDirection: 'column' }}
         >
             {/* Header Loop Progress */}
             <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '0.5rem', color: 'var(--text-secondary)', fontSize: '0.875rem', fontWeight: 'bold' }}>
@@ -134,7 +134,7 @@ const Quiz = () => {
 
             {/* Main Card */}
             {!isFeedback && (
-                <div className="card animate-slide-in" style={{ textAlign: 'center', minHeight: '180px', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', flex: 1, marginBottom: '1rem' }}>
+                <div className="card animate-slide-in" style={{ textAlign: 'center', minHeight: '180px', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', marginBottom: '1rem' }}>
                     {currentQuestion.mode === 'KANJI_TO_MEANING' ? (
                         <>
                             <h1 style={{ fontSize: '4.5rem', margin: 0, lineHeight: 1.2 }}>{currentQuestion.kanji.kanji}</h1>
@@ -150,7 +150,7 @@ const Quiz = () => {
 
             {/* Detailed Info Card - Only shown in Feedback */}
             {isFeedback && (
-                <div className={`card ${state.isCorrect ? '' : 'animate-shake'}`} style={{ padding: '1.5rem', flex: 1, marginBottom: '1rem' }}>
+                <div className={`card ${state.isCorrect ? '' : 'animate-shake'}`} style={{ padding: '1.5rem', marginBottom: '1rem' }}>
                     <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', marginBottom: '1rem', paddingBottom: '0.75rem', borderBottom: '1px solid var(--border)' }}>
                         <div style={{ fontSize: '4rem', fontWeight: 'bold', lineHeight: 1 }}>
                             {currentQuestion.kanji.kanji}

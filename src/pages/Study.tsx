@@ -146,7 +146,7 @@ const Study = () => {
                 display: 'flex',
                 justifyContent: 'center',
                 gap: '1rem',
-                zIndex: 10
+                zIndex: 200
             }}>
                 <button
                     className="btn btn-secondary"
