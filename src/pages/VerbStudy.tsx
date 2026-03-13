@@ -101,44 +101,47 @@ const VerbStudy = () => {
 
             {/* Verb Card */}
             <div className="card animate-slide-in" key={currentVerb.verb} style={{ padding: '2rem' }}>
-                <div style={{ textAlign: 'center', marginBottom: '2rem', borderBottom: '1px solid var(--border)', paddingBottom: '1.5rem' }}>
+                <div style={{ textAlign: 'center', marginBottom: '1.5rem', borderBottom: '1px solid var(--border)', paddingBottom: '1.5rem' }}>
                     <div style={{ fontSize: '1.25rem', color: 'var(--text-secondary)', marginBottom: '0.25rem', minHeight: '1.5rem' }}>
                         {currentVerb.verb !== currentVerb.reading ? currentVerb.reading : ''}
                     </div>
-                    <div style={{ fontSize: '4.5rem', fontWeight: 'bold', lineHeight: 1, marginBottom: '1rem' }}>
+                    <div style={{ fontSize: '4.5rem', fontWeight: 'bold', lineHeight: 1, marginBottom: '0.75rem' }}>
                         {currentVerb.verb}
+                    </div>
+                    <div style={{ fontSize: '1.5rem', fontWeight: '600', textTransform: 'capitalize', color: 'var(--text-primary)', marginBottom: '1rem' }}>
+                        {currentVerb.meaning}
                     </div>
                     <button className="btn-icon" onClick={() => speak(currentVerb.reading)} style={{ margin: '0 auto' }}>
                         <Volume2 size={32} />
                     </button>
                 </div>
 
-                <div style={{ display: 'grid', gap: '1.5rem' }}>
+                <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1.5rem', textAlign: 'left' }}>
                     <div>
-                        <h3 style={{ fontSize: '1rem', color: 'var(--text-secondary)', textTransform: 'uppercase', marginBottom: '0.5rem' }}>{I18N.verbMeaning}</h3>
-                        <div style={{ fontSize: '1.75rem', fontWeight: '600', textTransform: 'capitalize' }}>
-                            {currentVerb.meaning}
+                        <h3 style={{ fontSize: '0.875rem', color: 'var(--text-secondary)', textTransform: 'uppercase', marginBottom: '0.3rem' }}>{I18N.dictionaryForm}</h3>
+                        <div style={{ fontSize: '1.25rem', fontWeight: '500' }}>
+                            {currentVerb.dictionary_form}
                         </div>
                     </div>
 
                     <div>
-                        <h3 style={{ fontSize: '1rem', color: 'var(--text-secondary)', textTransform: 'uppercase', marginBottom: '0.5rem' }}>{I18N.verbGroup}</h3>
+                        <h3 style={{ fontSize: '0.875rem', color: 'var(--text-secondary)', textTransform: 'uppercase', marginBottom: '0.3rem' }}>{I18N.teForm}</h3>
+                        <div style={{ fontSize: '1.25rem', fontWeight: '500' }}>
+                            {currentVerb.te_form}
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3 style={{ fontSize: '0.875rem', color: 'var(--text-secondary)', textTransform: 'uppercase', marginBottom: '0.3rem' }}>{I18N.verbGroup}</h3>
                         <div style={{ fontSize: '1.25rem', fontWeight: '500' }}>
                             Grupo {currentVerb.group}
                         </div>
                     </div>
 
                     <div>
-                        <h3 style={{ fontSize: '1rem', color: 'var(--text-secondary)', textTransform: 'uppercase', marginBottom: '0.5rem' }}>{I18N.dictionaryForm}</h3>
-                        <div style={{ fontSize: '1.5rem' }}>
-                            {currentVerb.dictionary_form}
-                        </div>
-                    </div>
-
-                    <div>
-                        <h3 style={{ fontSize: '1rem', color: 'var(--text-secondary)', textTransform: 'uppercase', marginBottom: '0.5rem' }}>{I18N.teForm}</h3>
-                        <div style={{ fontSize: '1.5rem' }}>
-                            {currentVerb.te_form}
+                        <h3 style={{ fontSize: '0.875rem', color: 'var(--text-secondary)', textTransform: 'uppercase', marginBottom: '0.3rem' }}>{I18N.readings}</h3>
+                        <div style={{ fontSize: '1.25rem', fontWeight: '500' }}>
+                            {currentVerb.reading}
                         </div>
                     </div>
                 </div>
