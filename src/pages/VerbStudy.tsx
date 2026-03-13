@@ -4,6 +4,7 @@ import { useVerbs } from '../hooks/useVerbs';
 import { useAudio } from '../hooks/useAudio';
 import { Volume2, ArrowLeft, ArrowRight, X } from 'lucide-react';
 import { I18N } from '../i18n/es';
+import { getMasuForm, getMasuReading, renderFurigana } from '../utils/japanese';
 
 const VerbStudy = () => {
     const navigate = useNavigate();
@@ -80,6 +81,8 @@ const VerbStudy = () => {
     }
 
     const currentVerb = verbList[index];
+    const masuForm = getMasuForm(currentVerb.dictionary_form, currentVerb.group);
+    const masuReading = getMasuReading(currentVerb.reading, currentVerb.group);
 
     return (
         <div
@@ -102,16 +105,13 @@ const VerbStudy = () => {
             {/* Verb Card */}
             <div className="card animate-slide-in" key={currentVerb.verb} style={{ padding: '2rem' }}>
                 <div style={{ textAlign: 'center', marginBottom: '1.5rem', borderBottom: '1px solid var(--border)', paddingBottom: '1.5rem' }}>
-                    <div style={{ fontSize: '1.25rem', color: 'var(--text-secondary)', marginBottom: '0.25rem', minHeight: '1.5rem' }}>
-                        {currentVerb.verb !== currentVerb.reading ? currentVerb.reading : ''}
-                    </div>
                     <div style={{ fontSize: '4.5rem', fontWeight: 'bold', lineHeight: 1, marginBottom: '0.75rem' }}>
-                        {currentVerb.verb}
+                        {renderFurigana(masuForm, masuReading)}
                     </div>
                     <div style={{ fontSize: '1.5rem', fontWeight: '600', textTransform: 'capitalize', color: 'var(--text-primary)', marginBottom: '1rem' }}>
                         {currentVerb.meaning}
                     </div>
-                    <button className="btn-icon" onClick={() => speak(currentVerb.reading)} style={{ margin: '0 auto' }}>
+                    <button className="btn-icon" onClick={() => speak(masuReading)} style={{ margin: '0 auto' }}>
                         <Volume2 size={32} />
                     </button>
                 </div>
@@ -120,7 +120,7 @@ const VerbStudy = () => {
                     <div>
                         <h3 style={{ fontSize: '0.875rem', color: 'var(--text-secondary)', textTransform: 'uppercase', marginBottom: '0.3rem' }}>{I18N.dictionaryForm}</h3>
                         <div style={{ fontSize: '1.25rem', fontWeight: '500' }}>
-                            {currentVerb.dictionary_form}
+                            {renderFurigana(currentVerb.dictionary_form, currentVerb.reading)}
                         </div>
                     </div>
 
