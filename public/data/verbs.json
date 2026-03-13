@@ -1,0 +1,282 @@
+[
+  {
+    "verb": "食べる",
+    "reading": "たべる",
+    "meaning": "comer",
+    "dictionary_form": "食べる",
+    "te_form": "食べて"
+  },
+  {
+    "verb": "飲む",
+    "reading": "のむ",
+    "meaning": "beber",
+    "dictionary_form": "飲む",
+    "te_form": "飲んで"
+  },
+  {
+    "verb": "行く",
+    "reading": "いく",
+    "meaning": "ir",
+    "dictionary_form": "行く",
+    "te_form": "行って"
+  },
+  {
+    "verb": "来る",
+    "reading": "くる",
+    "meaning": "venir",
+    "dictionary_form": "来る",
+    "te_form": "来て"
+  },
+  {
+    "verb": "する",
+    "reading": "する",
+    "meaning": "hacer",
+    "dictionary_form": "する",
+    "te_form": "して"
+  },
+  {
+    "verb": "見る",
+    "reading": "みる",
+    "meaning": "ver / mirar",
+    "dictionary_form": "見る",
+    "te_form": "見て"
+  },
+  {
+    "verb": "聞く",
+    "reading": "きく",
+    "meaning": "escuchar / preguntar",
+    "dictionary_form": "聞く",
+    "te_form": "聞いて"
+  },
+  {
+    "verb": "話す",
+    "reading": "はなす",
+    "meaning": "hablar",
+    "dictionary_form": "話す",
+    "te_form": "話して"
+  },
+  {
+    "verb": "読む",
+    "reading": "よむ",
+    "meaning": "leer",
+    "dictionary_form": "読む",
+    "te_form": "読んで"
+  },
+  {
+    "verb": "書く",
+    "reading": "かく",
+    "meaning": "escribir",
+    "dictionary_form": "書く",
+    "te_form": "書いて"
+  },
+  {
+    "verb": "買う",
+    "reading": "かう",
+    "meaning": "comprar",
+    "dictionary_form": "買う",
+    "te_form": "買って"
+  },
+  {
+    "verb": "会う",
+    "reading": "あう",
+    "meaning": "encontrarse",
+    "dictionary_form": "会う",
+    "te_form": "会って"
+  },
+  {
+    "verb": "待つ",
+    "reading": "まつ",
+    "meaning": "esperar",
+    "dictionary_form": "待つ",
+    "te_form": "待って"
+  },
+  {
+    "verb": "立つ",
+    "reading": "たつ",
+    "meaning": "ponerse de pie",
+    "dictionary_form": "立つ",
+    "te_form": "立って"
+  },
+  {
+    "verb": "座る",
+    "reading": "すわる",
+    "meaning": "sentarse",
+    "dictionary_form": "座る",
+    "te_form": "座って"
+  },
+  {
+    "verb": "入る",
+    "reading": "はいる",
+    "meaning": "entrar",
+    "dictionary_form": "入る",
+    "te_form": "入って"
+  },
+  {
+    "verb": "出る",
+    "reading": "でる",
+    "meaning": "salir",
+    "dictionary_form": "出る",
+    "te_form": "出て"
+  },
+  {
+    "verb": "帰る",
+    "reading": "かえる",
+    "meaning": "regresar",
+    "dictionary_form": "帰る",
+    "te_form": "帰って"
+  },
+  {
+    "verb": "起きる",
+    "reading": "おきる",
+    "meaning": "levantarse",
+    "dictionary_form": "起きる",
+    "te_form": "起きて"
+  },
+  {
+    "verb": "寝る",
+    "reading": "ねる",
+    "meaning": "dormir",
+    "dictionary_form": "寝る",
+    "te_form": "寝て"
+  },
+  {
+    "verb": "泳ぐ",
+    "reading": "およぐ",
+    "meaning": "nadar",
+    "dictionary_form": "泳ぐ",
+    "te_form": "泳いで"
+  },
+  {
+    "verb": "遊ぶ",
+    "reading": "あそぶ",
+    "meaning": "jugar",
+    "dictionary_form": "遊ぶ",
+    "te_form": "遊んで"
+  },
+  {
+    "verb": "呼ぶ",
+    "reading": "よぶ",
+    "meaning": "llamar",
+    "dictionary_form": "呼ぶ",
+    "te_form": "呼んで"
+  },
+  {
+    "verb": "死ぬ",
+    "reading": "しぬ",
+    "meaning": "morir",
+    "dictionary_form": "死ぬ",
+    "te_form": "死んで"
+  },
+  {
+    "verb": "わかる",
+    "reading": "わかる",
+    "meaning": "entender",
+    "dictionary_form": "わかる",
+    "te_form": "わかって"
+  },
+  {
+    "verb": "教える",
+    "reading": "おしえる",
+    "meaning": "enseñar",
+    "dictionary_form": "教える",
+    "te_form": "教えて"
+  },
+  {
+    "verb": "習う",
+    "reading": "ならう",
+    "meaning": "aprender",
+    "dictionary_form": "習う",
+    "te_form": "習って"
+  },
+  {
+    "verb": "忘れる",
+    "reading": "わすれる",
+    "meaning": "olvidar",
+    "dictionary_form": "忘れる",
+    "te_form": "忘れて"
+  },
+  {
+    "verb": "覚える",
+    "reading": "おぼえる",
+    "meaning": "memorizar",
+    "dictionary_form": "覚える",
+    "te_form": "覚えて"
+  },
+  {
+    "verb": "洗う",
+    "reading": "あらう",
+    "meaning": "lavar",
+    "dictionary_form": "洗う",
+    "te_form": "洗って"
+  },
+  {
+    "verb": "乗る",
+    "reading": "のる",
+    "meaning": "subir a (vehículo)",
+    "dictionary_form": "乗る",
+    "te_form": "乗って"
+  },
+  {
+    "verb": "降りる",
+    "reading": "おりる",
+    "meaning": "bajar de (vehículo)",
+    "dictionary_form": "降りる",
+    "te_form": "降りて"
+  },
+  {
+    "verb": "開ける",
+    "reading": "あける",
+    "meaning": "abrir",
+    "dictionary_form": "開ける",
+    "te_form": "開けて"
+  },
+  {
+    "verb": "閉める",
+    "reading": "しめる",
+    "meaning": "cerrar",
+    "dictionary_form": "閉める",
+    "te_form": "閉めて"
+  },
+  {
+    "verb": "使う",
+    "reading": "つかう",
+    "meaning": "usar",
+    "dictionary_form": "使う",
+    "te_form": "使って"
+  },
+  {
+    "verb": "作る",
+    "reading": "つくる",
+    "meaning": "hacer / preparar",
+    "dictionary_form": "作る",
+    "te_form": "作って"
+  },
+  {
+    "verb": "休む",
+    "reading": "やすむ",
+    "meaning": "descansar",
+    "dictionary_form": "休む",
+    "te_form": "休んで"
+  },
+  {
+    "verb": "働く",
+    "reading": "はたらく",
+    "meaning": "trabajar",
+    "dictionary_form": "働く",
+    "te_form": "働いて"
+  },
+  {
+    "verb": "送る",
+    "reading": "おくる",
+    "meaning": "enviar",
+    "dictionary_form": "送る",
+    "te_form": "送って"
+  },
+  {
+    "verb": "終わる",
+    "reading": "おわる",
+    "meaning": "terminar",
+    "dictionary_form": "終わる",
+    "te_form": "終わって"
+  }
+]

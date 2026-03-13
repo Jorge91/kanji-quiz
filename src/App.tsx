@@ -81,7 +81,8 @@ const NavLink = ({ to, icon, active }: { to: string, icon: React.ReactNode, acti
 
 import Study from './pages/Study';
 
-// ... inside Layout ...
+import VerbStudy from './pages/VerbStudy';
+import VerbQuiz from './pages/VerbQuiz';
 
 function App() {
   return (
@@ -91,6 +92,8 @@ function App() {
           <Route path="/" element={<Dashboard />} />
           <Route path="/quiz" element={<Quiz />} />
           <Route path="/study" element={<Study />} />
+          <Route path="/verb-quiz" element={<VerbQuiz />} />
+          <Route path="/verb-study" element={<VerbStudy />} />
           <Route path="/stats" element={<Stats />} />
           <Route path="/manage" element={<ManageKanji />} />
         </Routes>

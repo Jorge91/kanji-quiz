@@ -44,5 +44,13 @@ export const I18N = {
     home: "Inicio",
     statsTitle: "Estadísticas",
     studyMode: "Modo Estudio",
-    meanings: "Significados"
+    meanings: "Significados",
+    // Verbs
+    studyVerbs: "Estudiar Verbos",
+    verbQuiz: "Quiz de Verbos",
+    dictionaryForm: "Forma Diccionario (辞書形)",
+    teForm: "Forma TE (て形)",
+    verbMeaning: "Significado",
+    verbQuizQuestionTe: "Selecciona la forma TE (て形) correcta.",
+    verbQuizQuestionDict: "Selecciona la forma diccionario (辞書形) correcta."
 };

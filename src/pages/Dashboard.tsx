@@ -13,7 +13,6 @@ const Dashboard = () => {
     const { sets, loading } = useKanji();
     const [selectedSets, setSelectedSets] = useState<Set<string>>(new Set());
 
-    // Load saved preference on mount
     useEffect(() => {
         const saved = localStorage.getItem(STORAGE_KEY_SETS);
         if (saved) {
@@ -27,7 +26,6 @@ const Dashboard = () => {
                 console.error("Failed to parse saved sets", e);
             }
         }
-        // Default fallback if nothing saved
         setSelectedSets(new Set(['n5']));
     }, []);
 
@@ -59,14 +57,18 @@ const Dashboard = () => {
         navigate(`/study?sets=${param}`);
     };
 
+    const handleVerbStudy = () => navigate('/verb-study');
+    const handleVerbQuiz = () => navigate('/verb-quiz');
+
     if (loading) return <div style={{ textAlign: 'center', padding: '2rem' }}>{I18N.loading}</div>;
 
     return (
-        <div style={{ paddingBottom: '2rem' }}>
+        <div style={{ paddingBottom: '2rem', display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
+            {/* Kanji Section */}
             <div className="card" style={{ textAlign: 'center', padding: '2rem 1rem' }}>
                 <h1 style={{ fontSize: '2.5rem', marginBottom: '0.5rem' }}>🇯🇵</h1>
-                <h2>{I18N.readyToLearn}</h2>
-                <p style={{ color: 'var(--text-secondary)', marginBottom: '2rem' }}>
+                <h2 style={{ marginBottom: '0.5rem' }}>Kanji</h2>
+                <p style={{ color: 'var(--text-secondary)', marginBottom: '1.5rem', fontSize: '0.9rem' }}>
                     {I18N.selectLevels}
                 </p>
 
@@ -75,7 +77,7 @@ const Dashboard = () => {
                     flexWrap: 'wrap',
                     gap: '0.5rem',
                     justifyContent: 'center',
-                    marginBottom: '2rem'
+                    marginBottom: '1.5rem'
                 }}>
                     {sets.map(set => (
                         <button
@@ -97,15 +99,15 @@ const Dashboard = () => {
                     ))}
                 </div>
 
-                <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
+                <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.75rem' }}>
                     <button
                         className="btn btn-primary"
                         onClick={handleStartQuiz}
                         disabled={selectedSets.size === 0}
-                        style={{ opacity: selectedSets.size === 0 ? 0.5 : 1, marginBottom: 0 }}
+                        style={{ opacity: selectedSets.size === 0 ? 0.5 : 1, marginBottom: 0, padding: '0.75rem 0.5rem' }}
                     >
-                        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.5rem' }}>
-                            <Play size={20} fill="currentColor" /> {I18N.startQuiz}
+                        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.4rem', fontSize: '0.9rem' }}>
+                            <Play size={18} fill="currentColor" /> {I18N.startQuiz}
                         </div>
                     </button>
 
@@ -113,15 +115,43 @@ const Dashboard = () => {
                         className="btn btn-secondary"
                         onClick={handleStartStudy}
                         disabled={selectedSets.size === 0}
-                        style={{ opacity: selectedSets.size === 0 ? 0.5 : 1, marginBottom: 0 }}
+                        style={{ opacity: selectedSets.size === 0 ? 0.5 : 1, marginBottom: 0, padding: '0.75rem 0.5rem' }}
                     >
-                        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.5rem' }}>
-                            <BookOpen size={20} /> {I18N.studyMode}
+                        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.4rem', fontSize: '0.9rem' }}>
+                            <BookOpen size={18} /> {I18N.studyMode}
                         </div>
                     </button>
                 </div>
-
                 {selectedSets.size === 0 && <p style={{ color: 'var(--danger)', fontSize: '0.8rem', marginTop: '1rem' }}>{I18N.selectAtLeastOne}</p>}
+            </div>
+
+            {/* Verbs Section */}
+            <div className="card" style={{ textAlign: 'center', padding: '1.5rem 1rem' }}>
+                <h2 style={{ marginBottom: '1rem', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.5rem' }}>
+                    <span style={{ fontSize: '1.5rem' }}>🗣️</span> Verbos
+                </h2>
+                
+                <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.75rem' }}>
+                    <button
+                        className="btn btn-primary"
+                        onClick={handleVerbQuiz}
+                        style={{ marginBottom: 0, padding: '0.75rem 0.5rem', background: 'var(--success)', boxShadow: '0 4px 0 #46a302', border: 'none', color: 'white' }}
+                    >
+                        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.4rem', fontSize: '0.9rem' }}>
+                            <Play size={18} fill="currentColor" /> {I18N.verbQuiz}
+                        </div>
+                    </button>
+
+                    <button
+                        className="btn btn-secondary"
+                        onClick={handleVerbStudy}
+                        style={{ marginBottom: 0, padding: '0.75rem 0.5rem' }}
+                    >
+                        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.4rem', fontSize: '0.9rem' }}>
+                            <BookOpen size={18} /> {I18N.studyVerbs}
+                        </div>
+                    </button>
+                </div>
             </div>
 
             <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>

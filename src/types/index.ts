@@ -34,3 +34,11 @@ export interface UserStats {
     currentStreak: number;
     bestStreak: number;
 }
+
+export interface VerbEntry {
+    verb: string;
+    reading: string;
+    meaning: string;
+    dictionary_form: string;
+    te_form: string;
+}
