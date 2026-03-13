@@ -51,6 +51,7 @@ export const I18N = {
     dictionaryForm: "Forma Diccionario (辞書形)",
     teForm: "Forma TE (て形)",
     verbMeaning: "Significado",
+    verbGroup: "Grupo",
     verbQuizQuestionTe: "Selecciona la forma TE (て形) correcta.",
     verbQuizQuestionDict: "Selecciona la forma diccionario (辞書形) correcta."
 };

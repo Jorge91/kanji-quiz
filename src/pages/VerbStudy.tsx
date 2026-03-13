@@ -122,6 +122,13 @@ const VerbStudy = () => {
                     </div>
 
                     <div>
+                        <h3 style={{ fontSize: '1rem', color: 'var(--text-secondary)', textTransform: 'uppercase', marginBottom: '0.5rem' }}>{I18N.verbGroup}</h3>
+                        <div style={{ fontSize: '1.25rem', fontWeight: '500' }}>
+                            Grupo {currentVerb.group}
+                        </div>
+                    </div>
+
+                    <div>
                         <h3 style={{ fontSize: '1rem', color: 'var(--text-secondary)', textTransform: 'uppercase', marginBottom: '0.5rem' }}>{I18N.dictionaryForm}</h3>
                         <div style={{ fontSize: '1.5rem' }}>
                             {currentVerb.dictionary_form}

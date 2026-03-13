@@ -41,4 +41,5 @@ export interface VerbEntry {
     meaning: string;
     dictionary_form: string;
     te_form: string;
+    group: 1 | 2 | 3;
 }
