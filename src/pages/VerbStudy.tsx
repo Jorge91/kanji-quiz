@@ -4,7 +4,7 @@ import { useVerbs } from '../hooks/useVerbs';
 import { useAudio } from '../hooks/useAudio';
 import { Volume2, ArrowLeft, ArrowRight, X } from 'lucide-react';
 import { I18N } from '../i18n/es';
-import { getMasuForm, getMasuReading, renderFurigana } from '../utils/japanese';
+import { getMasuForm, getMasuReading, renderFurigana, getTeReading } from '../utils/japanese';
 
 const VerbStudy = () => {
     const navigate = useNavigate();
@@ -83,6 +83,7 @@ const VerbStudy = () => {
     const currentVerb = verbList[index];
     const masuForm = getMasuForm(currentVerb.dictionary_form, currentVerb.group);
     const masuReading = getMasuReading(currentVerb.reading, currentVerb.group);
+    const teReading = getTeReading(currentVerb.reading, currentVerb.group);
 
     return (
         <div
@@ -127,7 +128,7 @@ const VerbStudy = () => {
                     <div>
                         <h3 style={{ fontSize: '0.875rem', color: 'var(--text-secondary)', textTransform: 'uppercase', marginBottom: '0.3rem' }}>{I18N.teForm}</h3>
                         <div style={{ fontSize: '1.25rem', fontWeight: '500' }}>
-                            {currentVerb.te_form}
+                            {renderFurigana(currentVerb.te_form, teReading)}
                         </div>
                     </div>
 
@@ -135,13 +136,6 @@ const VerbStudy = () => {
                         <h3 style={{ fontSize: '0.875rem', color: 'var(--text-secondary)', textTransform: 'uppercase', marginBottom: '0.3rem' }}>{I18N.verbGroup}</h3>
                         <div style={{ fontSize: '1.25rem', fontWeight: '500' }}>
                             Grupo {currentVerb.group}
-                        </div>
-                    </div>
-
-                    <div>
-                        <h3 style={{ fontSize: '0.875rem', color: 'var(--text-secondary)', textTransform: 'uppercase', marginBottom: '0.3rem' }}>{I18N.readings}</h3>
-                        <div style={{ fontSize: '1.25rem', fontWeight: '500' }}>
-                            {currentVerb.reading}
                         </div>
                     </div>
                 </div>

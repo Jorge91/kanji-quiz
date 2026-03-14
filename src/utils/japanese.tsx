@@ -53,6 +53,58 @@ export const getMasuForm = (dictionaryForm: string, group: 1 | 2 | 3): string =>
 /**
  * Converts a dictionary form reading (kana) to its MASU form reading based on its verb group.
  */
+/**
+ * Converts a dictionary form reading (kana) to its -te form reading based on its verb group.
+ */
+export const getTeReading = (reading: string, group: 1 | 2 | 3): string => {
+    if (!reading) return '';
+
+    if (group === 3) {
+        if (reading === 'する') return 'して';
+        if (reading === 'くる') return 'きて';
+        if (reading.endsWith('する')) {
+            return reading.slice(0, -2) + 'して';
+        }
+        return reading;
+    }
+
+    if (group === 2) {
+        if (reading.endsWith('る')) {
+            return reading.slice(0, -1) + 'て';
+        }
+        return reading;
+    }
+
+    if (group === 1) {
+        // Handle Group 1 -te form rules based on the dictionary form ending
+        const lastChar = reading.slice(-1);
+        
+        // う、つ、る -> って
+        if (['う', 'つ', 'る'].includes(lastChar)) {
+            return reading.slice(0, -1) + 'って';
+        }
+        // ぬ、ぶ、む -> んで
+        if (['ぬ', 'ぶ', 'む'].includes(lastChar)) {
+            return reading.slice(0, -1) + 'んで';
+        }
+        // く -> いて (Exception: いく -> いって)
+        if (lastChar === 'く') {
+            if (reading === 'いく') return 'いって';
+            return reading.slice(0, -1) + 'いて';
+        }
+        // ぐ -> いで
+        if (lastChar === 'ぐ') {
+            return reading.slice(0, -1) + 'いで';
+        }
+        // す -> して
+        if (lastChar === 'す') {
+            return reading.slice(0, -1) + 'して';
+        }
+    }
+
+    return reading;
+};
+
 export const getMasuReading = (reading: string, group: 1 | 2 | 3): string => {
     if (!reading) return '';
 
