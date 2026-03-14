@@ -2,12 +2,16 @@ import { useState, useCallback } from 'react';
 import type { VerbEntry } from '../types';
 import { saveQuizResult, updateUserStats, getUserStats } from '../services/db';
 
+import { getTeReading } from '../utils/japanese';
+
 type QuizMode = 'DICT_TO_TE' | 'TE_TO_DICT';
 
 export interface VerbQuestion {
     verb: VerbEntry;
     options: string[]; // Distractors + Correct Answer mixed
+    optionReadings: string[]; // Readings corresponding to options
     correctAnswer: string;
+    promptReading: string; // Reading for the prompt verb
     mode: QuizMode;
 }
 
@@ -36,41 +40,43 @@ export const useVerbQuiz = (allVerbs: VerbEntry[]) => {
         const generatedQuestions = selectedItems.map(verb => {
             const mode: QuizMode = Math.random() > 0.5 ? 'DICT_TO_TE' : 'TE_TO_DICT';
             let options: string[] = [];
+            let optionReadings: string[] = [];
             let correctAnswer = '';
+            let promptReading = '';
 
             if (mode === 'DICT_TO_TE') {
                 correctAnswer = verb.te_form;
-                const distractors = allVerbs
-                    .filter(v => v.verb !== verb.verb && v.te_form !== verb.te_form) // Avoid identical distractor
+                promptReading = verb.reading;
+                
+                const chosenDistractors = allVerbs
+                    .filter(v => v.verb !== verb.verb && v.te_form !== verb.te_form)
                     .sort(() => 0.5 - Math.random())
-                    .slice(0, 3)
-                    .map(v => v.te_form);
-                options = [...new Set([...distractors, correctAnswer])]; // Ensure unique
-                // If not 4 options due to uniqueness issues, pad with random te forms
-                while (options.length < 4) {
-                     const randomV = allVerbs[Math.floor(Math.random() * allVerbs.length)].te_form;
-                     if (!options.includes(randomV)) options.push(randomV);
-                }
-                options = options.sort(() => 0.5 - Math.random());
+                    .slice(0, 3);
+                
+                const allOrients = [...chosenDistractors, verb].sort(() => 0.5 - Math.random());
+                options = allOrients.map(v => v.te_form);
+                optionReadings = allOrients.map(v => getTeReading(v.reading, v.group));
+
             } else {
                 correctAnswer = verb.dictionary_form;
-                const distractors = allVerbs
+                promptReading = getTeReading(verb.reading, verb.group);
+                
+                const chosenDistractors = allVerbs
                     .filter(v => v.verb !== verb.verb && v.dictionary_form !== verb.dictionary_form)
                     .sort(() => 0.5 - Math.random())
-                    .slice(0, 3)
-                    .map(v => v.dictionary_form);
-                options = [...new Set([...distractors, correctAnswer])];
-                while (options.length < 4) {
-                     const randomV = allVerbs[Math.floor(Math.random() * allVerbs.length)].dictionary_form;
-                     if (!options.includes(randomV)) options.push(randomV);
-                }
-                options = options.sort(() => 0.5 - Math.random());
+                    .slice(0, 3);
+                
+                const allOrients = [...chosenDistractors, verb].sort(() => 0.5 - Math.random());
+                options = allOrients.map(v => v.dictionary_form);
+                optionReadings = allOrients.map(v => v.reading);
             }
 
             return {
                 verb,
                 options,
+                optionReadings,
                 correctAnswer,
+                promptReading,
                 mode
             };
         });

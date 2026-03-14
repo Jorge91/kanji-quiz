@@ -5,6 +5,7 @@ import { useNavigate } from 'react-router-dom';
 import { CheckCircle, XCircle, ArrowRight } from 'lucide-react';
 import { useHaptics } from '../hooks/useHaptics';
 import { I18N } from '../i18n/es';
+import { renderFurigana, getTeReading } from '../utils/japanese';
 
 const VerbQuiz = () => {
     const { verbList, loading: dataLoading } = useVerbs();
@@ -125,7 +126,7 @@ const VerbQuiz = () => {
             {!isFeedback && (
                 <div className="card animate-slide-in" style={{ textAlign: 'center', minHeight: '180px', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', marginBottom: '1rem', padding: '2rem' }}>
                     <p style={{ color: 'var(--text-secondary)', marginBottom: '1rem', fontWeight: 'bold' }}>{questionText}</p>
-                    <h1 style={{ fontSize: '3.5rem', margin: 0, lineHeight: 1.2 }}>{promptVerb}</h1>
+                    <h1 style={{ fontSize: '3.5rem', margin: 0, lineHeight: 1.2 }}>{renderFurigana(promptVerb, currentQuestion.promptReading)}</h1>
                     <p style={{ marginTop: '0.5rem', fontSize: '1.25rem' }}>({currentQuestion.verb.meaning})</p>
                 </div>
             )}
@@ -140,11 +141,11 @@ const VerbQuiz = () => {
                         </div>
                         <div>
                             <div style={{ color: 'var(--text-secondary)', fontSize: '0.8rem', marginBottom: '0.2rem', fontWeight: 'bold' }}>{I18N.dictionaryForm}</div>
-                            <div style={{ fontSize: '1.25rem' }}>{currentQuestion.verb.dictionary_form}</div>
+                            <div style={{ fontSize: '1.25rem' }}>{renderFurigana(currentQuestion.verb.dictionary_form, currentQuestion.verb.reading)}</div>
                         </div>
                         <div>
                             <div style={{ color: 'var(--text-secondary)', fontSize: '0.8rem', marginBottom: '0.2rem', fontWeight: 'bold' }}>{I18N.teForm}</div>
-                            <div style={{ fontSize: '1.25rem' }}>{currentQuestion.verb.te_form}</div>
+                            <div style={{ fontSize: '1.25rem' }}>{renderFurigana(currentQuestion.verb.te_form, getTeReading(currentQuestion.verb.reading, currentQuestion.verb.group as 1|2|3))}</div>
                         </div>
                     </div>
                 </div>
@@ -157,10 +158,10 @@ const VerbQuiz = () => {
                         <button
                             key={idx}
                             className="btn btn-secondary"
-                            style={{ minHeight: '48px', fontSize: '1.25rem', marginBottom: 0, textAlign: 'center', paddingLeft: '1.5rem', paddingRight: '1rem' }}
+                            style={{ minHeight: '48px', fontSize: '1.25rem', marginBottom: 0, textAlign: 'center', paddingLeft: '1.5rem', paddingRight: '1rem', paddingTop: '0.5rem', paddingBottom: '0.5rem' }}
                             onClick={() => handleAnswer(option)}
                         >
-                            {option}
+                            {renderFurigana(option, currentQuestion.optionReadings[idx])}
                         </button>
                     ))}
                 </div>
