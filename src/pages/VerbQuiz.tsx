@@ -95,8 +95,8 @@ const VerbQuiz = () => {
     const { currentQuestion, questionIndex, total, score } = state;
     const isFeedback = state.status === 'FEEDBACK';
 
-    const questionText = currentQuestion.mode === 'DICT_TO_TE' ? I18N.verbQuizQuestionTe : I18N.verbQuizQuestionDict;
-    const promptVerb = currentQuestion.mode === 'DICT_TO_TE' ? currentQuestion.verb.dictionary_form : currentQuestion.verb.te_form;
+    const questionText = currentQuestion.mode === 'MASU_TO_TE' ? I18N.verbQuizQuestionTe : I18N.verbQuizQuestionDict;
+    const promptVerb = currentQuestion.promptVerb;
 
     return (
         <div

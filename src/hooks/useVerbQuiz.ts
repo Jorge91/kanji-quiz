@@ -2,15 +2,16 @@ import { useState, useCallback } from 'react';
 import type { VerbEntry } from '../types';
 import { saveQuizResult, updateUserStats, getUserStats } from '../services/db';
 
-import { getTeReading } from '../utils/japanese';
+import { getTeReading, getMasuForm, getMasuReading } from '../utils/japanese';
 
-type QuizMode = 'DICT_TO_TE' | 'TE_TO_DICT';
+type QuizMode = 'MASU_TO_TE' | 'MASU_TO_DICT';
 
 export interface VerbQuestion {
     verb: VerbEntry;
     options: string[]; // Distractors + Correct Answer mixed
     optionReadings: string[]; // Readings corresponding to options
     correctAnswer: string;
+    promptVerb: string; // The verb shown as prompt (-masu form)
     promptReading: string; // Reading for the prompt verb
     mode: QuizMode;
 }
@@ -38,15 +39,17 @@ export const useVerbQuiz = (allVerbs: VerbEntry[]) => {
         const selectedItems = shuffled.slice(0, Math.min(QUESTIONS_PER_QUIZ, allVerbs.length));
 
         const generatedQuestions = selectedItems.map(verb => {
-            const mode: QuizMode = Math.random() > 0.5 ? 'DICT_TO_TE' : 'TE_TO_DICT';
+            const mode: QuizMode = Math.random() > 0.5 ? 'MASU_TO_TE' : 'MASU_TO_DICT';
             let options: string[] = [];
             let optionReadings: string[] = [];
             let correctAnswer = '';
-            let promptReading = '';
+            
+            // Prompt is ALWAYS -masu form
+            const promptVerb = getMasuForm(verb.dictionary_form, verb.group as 1|2|3);
+            const promptReading = getMasuReading(verb.reading, verb.group as 1|2|3);
 
-            if (mode === 'DICT_TO_TE') {
+            if (mode === 'MASU_TO_TE') {
                 correctAnswer = verb.te_form;
-                promptReading = verb.reading;
                 
                 const chosenDistractors = allVerbs
                     .filter(v => v.verb !== verb.verb && v.te_form !== verb.te_form)
@@ -55,11 +58,10 @@ export const useVerbQuiz = (allVerbs: VerbEntry[]) => {
                 
                 const allOrients = [...chosenDistractors, verb].sort(() => 0.5 - Math.random());
                 options = allOrients.map(v => v.te_form);
-                optionReadings = allOrients.map(v => getTeReading(v.reading, v.group));
+                optionReadings = allOrients.map(v => getTeReading(v.reading, v.group as 1|2|3));
 
             } else {
                 correctAnswer = verb.dictionary_form;
-                promptReading = getTeReading(verb.reading, verb.group);
                 
                 const chosenDistractors = allVerbs
                     .filter(v => v.verb !== verb.verb && v.dictionary_form !== verb.dictionary_form)
@@ -76,6 +78,7 @@ export const useVerbQuiz = (allVerbs: VerbEntry[]) => {
                 options,
                 optionReadings,
                 correctAnswer,
+                promptVerb,
                 promptReading,
                 mode
             };
